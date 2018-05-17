@@ -1,0 +1,20 @@
+sudo: false
+language: python
+matrix:
+  include:
+    - python: '3.6'
+      env: LTD_SKIP_UPLOAD=false
+install:
+  - 'pip install -r requirements.txt'
+  - 'pip install ltd-conveyor'
+script:
+  - 'make html'
+  - 'make linkcheck'
+after_success:
+  - 'ltd --log-level info upload --product "nb" --travis --dir _build/html'
+env:
+  global:
+    - LTD_SKIP_UPLOAD=true  # disable doc deploys in regular test matrix
+    # LTD Keeper / S3 deployment credentials and configs
+    - secure: "Bt3PS19ZQISDZMWAxNHsw0WGgJBZ33eD9xnbRjkJa/Xc+PbDOdgzb+ZOCKKpGq/bng0SuQDKitGYtWiO+4oK7w9c21Sk3ERbeog4G8r4n3hUrWFyDuJyHFLoZq6JtTwAkDDlM3MqK39zvMor89YEv/9jEAt5yRvzwR9LC2m48ZQ5eTUisa24WOCThUdFc1F3Nqf1KhjZ+9Y7//BI0Wp0cXhazpDLOcui7wDwBCOqgnuucFTX95kle9aldD8+bRsTh13gEEQo5McCBwOq5UU4ppgx8YiB5IfddiBXMDmd8Yfc9zurd68B6/AC20dACQsOxQUZmRhpz+e8DwLLxp665t33eQt4Yt2G5OZ2FQMKSXURybkvwwNrggrTo5MzcJDFRyXuzko6R9W1egzrfh8qc4h6fmKozmAstk0QnWOB80HLVz53IJni9ykHep5Teub6t2njlsFirVGJj4zD8lOpQs7pzWNCIB+jBF3hKHMzXQG0Ie9fsoI7pUphXitPP5jIi+FOuEOn3JYq1S+YOglfjvYIELycSKQ/I5mRHER0epuA5v65JNLNPZhRljsWgCRAIMijwECFXe1RT9ZTWfXP4V3glb1kBa5Zfpe79qCPdD5eOuWhvp1XEc+CrrArWK+SLUjQIojYCAIOrM4nqn8ia0yMIOtUqu34B8QOoFqqvGI="
+    - secure: "Om7VL5RuHUZhzuqmgSVDbyhLLGgcf8A0PgjgluYysJfGAcyOVHIm8suboqPGxoT/RbC9KHDNvTiyWdqiskNvXu7ItI8B+KeS5C0BHUX3GR6r0HSl6J+x9O7wg9VGLz3F3qUGcxppqSG54UFsL8IOElkOm44FGp+wEL/Hwo1fy9paf5PYt+3I/waoXfdneBx7zKIWAI3yvCuMQw9A1fLe5HDMkO6ZNwWPHA+yx9YOU7tz80cErnidTjJQ77Rae0mgUKyDIuEORgY7FKgNkERfT78mJnD7J8s1n0YmCXKHoewy2Qeu/nst6NiMW5/7iEEvbai1h7B0ckgyykS7brntvKdgWl4O+NEhnWkbDhfAPcn8oP7EH2EVLXn9n6ABU/n/I/bxVFduFbx5DtUjI5Xzj9d0MRDYky8THKMNB54IlVTjxhBXwzz24bsZo9Mse5iXmRS8hCMcR8eljlk8IWUf1yM+/6aWmjkqSpMJGgaxFJxavrkBvWQc8upzkG78v9HGa0Uf1vPLPnuuC5I+VX6e4dQ/QBkip82qmLT2spgCjnNuSu3a3iW2kpp2LoJtAblwGAXSDhCLjU2yq90TloobnyfOlvwK2xCtKjxi4+0nP1RymesA5COdlYGAhDvNAt3QkOBtGwVUFMSo4a7naErE290HHlJameUvWXKVf5ofnDI="
