@@ -24,6 +24,14 @@ Notebook library
    notebooks/notebook-demo
    notebooks/repositories
 
+Using the LSST Science Pipelines
+================================
+
+.. toctree::
+   :maxdepth: 1
+
+   science-pipelines/science-pipelines-in-terminals
+   science-pipelines/science-pipelines-in-notebooks
 
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
