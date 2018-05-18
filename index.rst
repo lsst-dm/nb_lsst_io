@@ -8,9 +8,10 @@ The Notebook Aspect is powered by the JupyterLab_ project.
 Getting started
 ===============
 
-TODO.
+.. toctree:: 
+   :maxdepth: 1
 
-.. Log in and get started.
+   getting-started/logging-in
 
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
