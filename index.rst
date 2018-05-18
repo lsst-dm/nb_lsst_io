@@ -12,6 +12,7 @@ Getting started
    :maxdepth: 1
 
    getting-started/logging-in
+   getting-started/logging-out
 
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
