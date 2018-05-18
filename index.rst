@@ -15,5 +15,15 @@ Getting started
    getting-started/logging-out
    getting-started/getting-help
 
+Notebook library
+================
+
+.. toctree:: 
+   :maxdepth: 1
+
+   notebooks/notebook-demo
+   notebooks/repositories
+
+
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
