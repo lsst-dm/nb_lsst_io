@@ -33,5 +33,13 @@ Using the LSST Science Pipelines
    science-pipelines/science-pipelines-in-terminals
    science-pipelines/science-pipelines-in-notebooks
 
+Environment
+===========
+
+.. toctree::
+   :maxdepth: 1
+
+   environment/directories
+
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
