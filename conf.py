@@ -32,7 +32,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'LSST Science Platform: Notebook Aspect'
+project = 'LSST Science Platform Notebook Aspect'
 copyright = '2018 Association of Universities for Research in Astronomy'
 author = 'LSST Data Management'
 
