@@ -36,6 +36,8 @@ Using the LSST Science Pipelines
 Environment
 ===========
 
+Software and data:
+
 .. toctree::
    :maxdepth: 1
 
@@ -44,5 +46,11 @@ Environment
    environment/installed-software
    environment/jupyterlab-extensions
 
+Configuration:
+
+.. toctree::
+   :maxdepth: 1
+
+   environment/shell-configuration
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
