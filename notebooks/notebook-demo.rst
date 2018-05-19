@@ -29,6 +29,9 @@ This notebook explores a very simple analysis to show the utility of notebooks i
 
 This notebook uses data from DR14 of the SDSS survey, using the globular cluster Whiting I as a starting point.
 
+.. image:: cluster.jpg
+   :alt: Screenshot of the cluster notebook showing an image of the Whiting I cluster with a contour plot overlaid showing the density of stars. The stellar density peak corresponds to the location and shape of the Whiting 1 cluster.
+
 Firefly.ipynb (Firefly Visualization Demo)
 ------------------------------------------
 
@@ -47,6 +50,9 @@ star_galaxy.ipynb (A very simple example of star/galaxy separation)
 
 This notebook uses the LSST Science Pipelines’s Butler to get an Exposure and source table, and then use the ``base_ClassificationExtendedness_value`` to classify sources as stars or galaxies.
 The notebook shows how to use Matplotlib to visualize the sources on the exposure, and analyze the performance of the star-galaxy classifier.
+
+.. image:: star-galaxy.png
+   :alt: Screenshot of the star galaxy notebook showing a plot of source flux versus the ratio of measured flux to PSF-modeled flux. Sources identified as stars have flux ratios close to 1.
 
 More notebooks
 ==============
