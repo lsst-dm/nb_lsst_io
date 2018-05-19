@@ -41,6 +41,7 @@ Environment
 
    environment/directories
    environment/python
+   environment/installed-software
 
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
