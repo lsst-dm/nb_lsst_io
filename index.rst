@@ -1,3 +1,7 @@
+.. image:: dome@2x-8.png
+   :width: 200px
+   :align: right
+
 ###################################################
 LSST Science Platform Notebook Aspect Documentation
 ###################################################
