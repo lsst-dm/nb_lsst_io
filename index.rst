@@ -32,6 +32,7 @@ Using the LSST Science Pipelines
 
    science-pipelines/science-pipelines-in-terminals
    science-pipelines/science-pipelines-in-notebooks
+   science-pipelines/development-tutorial
 
 Environment
 ===========

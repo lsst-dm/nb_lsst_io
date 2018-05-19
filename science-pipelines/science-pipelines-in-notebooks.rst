@@ -68,7 +68,7 @@ For example, if your package is the ``~/notebooks/my_package`` directory, add th
 
    You need to compile an LSST Science Pipelines package first with :command:`scons` before using it.
 
-   .. See TODO for a step-by-step development tutorial.
+   See: :doc:`development-tutorial`.
 
 bash syntax allowed
 -------------------
