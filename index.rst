@@ -52,5 +52,7 @@ Configuration:
    :maxdepth: 1
 
    environment/shell-configuration
+   environment/git-configuration
+
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
