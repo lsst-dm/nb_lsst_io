@@ -81,6 +81,11 @@ intersphinx_mapping = {
     'python': ('http://docs.python.org/3/', None),
 }
 
+# -- Options for linkcheck builder ----------------------------------------
+
+linkcheck_ignore = [r'^https://lsst-lspdev\.ncsa\.illinois\.edu']
+linkcheck_retries = 2
+
 # -- Options for HTML output ----------------------------------------------
 
 templates_path = [
