@@ -1,4 +1,4 @@
 --index-url https://pypi.python.org/simple/
 
 documenteer
-lsst-sphinx-bootstrap-theme
+lsst-sphinx-bootstrap-theme==0.2.0rc1
