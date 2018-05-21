@@ -71,7 +71,7 @@ Next, click **Spawn** and you’ll be launched into the Notebook Aspect.
 Next steps
 ==========
 
--  `Learn more about the JupyterLab interface <https://jupyterlab.readthedocs.io/en/latest/>`_ (Project Jupyter documentation)
--  :doc:`Explore demo notebooks featuring LSST data analysis <notebook-demo>`.
+-  Learn more about the `JupyterLab interface <https://jupyterlab.readthedocs.io/en/latest/>`_ (external Project Jupyter documentation).
+-  :doc:`Explore demo notebooks <notebook-demo>` featuring LSST data analysis.
 
 .. _LSST Science Pipelines: https://pipelines.lsst.io
