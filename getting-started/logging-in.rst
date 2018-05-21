@@ -72,8 +72,6 @@ Next steps
 ==========
 
 -  `Learn more about the JupyterLab interface <https://jupyterlab.readthedocs.io/en/latest/>`_ (Project Jupyter documentation)
--  Explore demo notebooks featuring LSST data analysis.
-
-.. FIXME add link.
+-  :doc:`Explore demo notebooks featuring LSST data analysis </notebooks/notebook-demo>`.
 
 .. _LSST Science Pipelines: https://pipelines.lsst.io
