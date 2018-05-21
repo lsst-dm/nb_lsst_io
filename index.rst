@@ -18,17 +18,10 @@ Getting started
    :maxdepth: 1
 
    getting-started/logging-in
+   getting-started/notebook-demo
+   getting-started/repositories
    getting-started/logging-out
    getting-started/getting-help
-
-Notebook library
-================
-
-.. toctree:: 
-   :maxdepth: 1
-
-   notebooks/notebook-demo
-   notebooks/repositories
 
 Using the LSST Science Pipelines
 ================================
