@@ -5,7 +5,7 @@ Using the LSST Science Pipelines in notebooks (LSST kernel)
 The LSST kernel includes the `LSST Science Pipelines`_, making it a convenient way to work with LSST’s software.
 The version of the LSST Science Pipelines that’s preinstalled corresponds to the :ref:`image you selected at log in <logging-in-image>`.
 
-This page describes how to use and customize the LSST kernel in notebooks.
+This page describes how to :ref:`use the LSST kernel <lsst-kernel-create>` and configure EUPS package set ups and environment variables with the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` configuration file.
 
 .. seealso::
 
