@@ -70,12 +70,24 @@ For example, if your package is the ``~/notebooks/my_package`` directory, add th
 
    See: :doc:`development-tutorial`.
 
-bash syntax allowed
--------------------
+.. _lsst-kernel-user-setups-envvars:
+
+Export environment variables for notebooks
+------------------------------------------
 
 The :file:`~/notebooks/.user_setups` file is sourced by bash.
 This means you can include any valid bash syntax.
-For example, you can define environment variables that are accessible from notebooks.
+
+For example, you can define environment variables that are accessible from notebooks:
+
+.. code-block:: bash
+
+   export MYVAR="My env var"
+
+.. note::
+
+   Environment variables exported from :doc:`~/.bashrc and ~/.bash_profile </environment/shell-configuration>` **are not** accessible from notebooks.
+   You need to export those variables from :file:`~/notebooks/.user_setups` instead.
 
 .. _lsst-kernel-verify-user-setups:
 

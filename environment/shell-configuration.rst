@@ -8,6 +8,6 @@ You can configure your ``bash`` environment (including environment variables, al
 .. note::
 
    Environment variables that you set in :file:`~/.bashrc` or :file:`~/.bashrc_profile` are not available from notebooks.
-   You can add such environment variables to you :file:`~/notebooks/.user_setups` file, see :ref:`lsst-kernel-user-setups`.
+   You can add such environment variables to you :file:`~/notebooks/.user_setups` file, see :ref:`lsst-kernel-user-setups-envvars`.
 
 .. _`JupyterLab Terminal`: https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
