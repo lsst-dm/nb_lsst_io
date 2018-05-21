@@ -38,7 +38,7 @@ With the LSST kernel you don’t run the ``loadLSST.bash`` and ``setup`` command
 Switch an opened notebook to the LSST kernel
 ============================================
 
-You can open existing notebooks by double clicking on their names in the JupyterLab file browser.
+You can open existing notebooks by double clicking on their icons in the JupyterLab `file browser`_.
 JupyterLab automatically opens notebooks in the same kernel that they were created with.
 If you’re opening an notebooks that wasn’t created in the Notebook Aspect, you may need to switch the kernel to LSST:
 
@@ -77,6 +77,25 @@ The :file:`~/notebooks/.user_setups` file is sourced by bash.
 This means you can include any valid bash syntax.
 For example, you can define environment variables that are accessible from notebooks.
 
+.. _lsst-kernel-verify-user-setups:
+
+Tip: source ~/notebooks/.user_setups to verify it
+-------------------------------------------------
+
+Since :file:`~/notebooks/.user_setups` is a bash script, it's sensitive to syntax errors.
+You won't be alerted to syntax errors when you start a new notebook kernel, though.
+
+The best way to check that your :file:`~/notebooks/.user_setups` file is correct is by sourcing it from a `terminal`_:
+
+.. code-block:: bash
+
+   source ~/notebooks/.user_setups
+
+.. note::
+
+   If :file:`~/notebooks/.user_setups` includes a :command:`setup` command, ensure that you have :doc:`set up the LSST environment <science-pipelines-in-terminals>` in the terminal first.
+
 .. _`LSST Science Pipelines`: https://pipelines.lsst.io
 .. _`file browser`: https://jupyterlab.readthedocs.io/en/latest/user/files.html
+.. _`terminal`: https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
 .. _`JupyterLab Notebooks documentation`: https://jupyterlab.readthedocs.io/en/latest/user/notebook.html
