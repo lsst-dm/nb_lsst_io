@@ -1,6 +1,6 @@
-##########################
-More notebook repositories
-##########################
+##################################
+LSST-related notebook repositories
+##################################
 
 Many groups in LSST and the wider community are sharing Jupyter notebooks on GitHub.
 These notebooks are excellent resources for learning about LSST data processing and can be inspiration for your own work.
