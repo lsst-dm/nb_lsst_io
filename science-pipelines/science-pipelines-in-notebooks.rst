@@ -95,6 +95,19 @@ The best way to check that your :file:`~/notebooks/.user_setups` file is correct
 
    If :file:`~/notebooks/.user_setups` includes a :command:`setup` command, ensure that you have :doc:`set up the LSST environment <science-pipelines-in-terminals>` in the terminal first.
 
+.. _lsst-kernel-user-setups-restart:
+
+Updating ~/notebooks/.user_setups for a running notebook kernel
+---------------------------------------------------------------
+
+If you need to change package setups or environment variables for an already-opened notebook, follow these steps:
+
+1. Edit and save the :file:`~/notebooks/.user_setups` file.
+
+2. Return to your notebook's tab and restart the kernel (**Kernel** → **Restart Kernel**).
+
+You'll need to rerun your notebook's cells after restarting the kernel.
+
 .. _`LSST Science Pipelines`: https://pipelines.lsst.io
 .. _`file browser`: https://jupyterlab.readthedocs.io/en/latest/user/files.html
 .. _`terminal`: https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
