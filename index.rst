@@ -6,7 +6,7 @@
 LSST Science Platform Notebook Aspect Documentation
 ###################################################
 
-The Notebook Aspect enables you to do your science at the LSST Data Facility, using the LSST Science Pipelines, a full suite of development tools, and your own Python code.
+The Notebook Aspect enables you to do your science at the LSST Data Facility, with the LSST Science Pipelines, a full suite of development tools, and your own Python code.
 The Notebook Aspect is powered by the JupyterLab_ project.
 
 This documentation is specific to the deployment at https://lsst-lspdev.ncsa.illinois.edu/nb.
