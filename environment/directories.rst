@@ -38,9 +38,11 @@ $HOME
 =====
 
 Your home directory is just that.
-It’s backed by the same storage as your home directory on `lsst-dev`_ in the LSST Data Facility.
+It’s backed by essentially the same storage as your home directory on `lsst-dev`_ in the LSST Data Facility.
 In fact, your :file:`$HOME` directory in the Notebook Aspect *is* the :file:`$HOME/jhome/` directory on `lsst-dev <https://developer.lsst.io/services/lsst-dev.html>`_. 
-As such, it’s subject to the same `data use and protection policies`_.
+
+Currently there is a 100 GB quota for :file:`$HOME`.
+You can use :ref:`filesystem-project` for larger datasets.
 
 .. _filesystem-notebooks:
 
