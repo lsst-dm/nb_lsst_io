@@ -61,5 +61,6 @@ Project info
    :maxdepth: 1
 
    project/implementation
+   project/contributing
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io
