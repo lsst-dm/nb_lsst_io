@@ -54,5 +54,12 @@ Configuration:
    environment/shell-configuration
    environment/git-configuration
 
+Project info
+============
+
+.. toctree::
+   :maxdepth: 1
+
+   project/implementation
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/
 .. _LSST Science Pipelines: https://pipelines.lsst.io

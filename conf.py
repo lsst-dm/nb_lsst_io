@@ -83,7 +83,9 @@ intersphinx_mapping = {
 
 # -- Options for linkcheck builder ----------------------------------------
 
-linkcheck_ignore = [r'^https://lsst-lspdev\.ncsa\.illinois\.edu']
+linkcheck_ignore = [r'^https://lsst-lspdev\.ncsa\.illinois\.edu',
+                    # ignored because the homepage isn't present yet (in dev)
+                    r'^https://nb\.lsst\.io$']
 linkcheck_retries = 2
 
 # -- Options for HTML output ----------------------------------------------
