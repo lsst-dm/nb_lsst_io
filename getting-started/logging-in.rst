@@ -3,8 +3,8 @@ Logging in
 ##########
 
 You need NCSA Kerberos credentials to log into the LSST Science Platform Notebook Aspect.
-Members of LSST receive an NCSA Kerberos account as part of your onboarding.
-If haven’t onboarded into LSST yet, talk to your T/CAM or supervisor (see `DM Onboarding <https://developer.lsst.io/team/onboarding.html>`__).
+Members of LSST receive an NCSA Kerberos account as part of your `onboarding <https://developer.lsst.io/team/onboarding.html>`__.
+If you haven’t onboarded into LSST yet, talk to your T/CAM or sponsor.
 
 Step 1: Use the NCSA VPN with Cisco AnyConnect
 ==============================================
