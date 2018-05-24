@@ -1,3 +1,5 @@
 # Contributing to nb.lsst.io
 
-We follow the DM development workflow: https://developer.lsst.io/work/flow.html
+We accept GitHub issues and pull requests to help improve this documentation.
+
+Please read https://nb.lsst.io/project/contributing.html for details.
