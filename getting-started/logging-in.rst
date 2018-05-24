@@ -20,6 +20,13 @@ To use the NCSA VPN, open `vpn.ncsa.illinois.edu <https://vpn.ncsa.illinois.edu>
 Select ``ncsa-vpn-default`` from the **GROUP** menu and enter your NCSA Kerberos username and password.
 The page installs and starts the Cisco AnyConnect application for you.
 
+.. warning::
+
+   In most browsers, the Java-based VPN installation will fail.
+   Wait for the direct-download fallback to become available and install the AnyConnect client that way.
+
+   The certificate expiration of the macOS client download is a known issue.
+
 .. tip::
 
    In the future, you can open the AnyConnect application and enter ``vpn.ncsa.illinois.edu`` to get connected.
