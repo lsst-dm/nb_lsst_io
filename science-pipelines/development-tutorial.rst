@@ -91,7 +91,7 @@ In a terminal text editor like Vim or Emacs, create or open ``~/notebooks/.user_
 
 .. code-block:: bash
 
-   setup -k -r ~/notebooks/pipe_base
+   setup -k -r ~/notebooks/pipe_tasks
 
 You can check that this works by :ref:`opening a new notebook with the LSST kernel <lsst-kernel-create>` and running:
 
@@ -113,7 +113,7 @@ First, create a Git branch from the terminal:
 
    git checkout -b my-task
 
-Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/notebooks/pipe_base`) and paste these contents into it:
+Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/notebooks/pipe_tasks`) and paste these contents into it:
 
 .. code-block:: python
 
