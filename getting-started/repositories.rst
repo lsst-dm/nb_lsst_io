@@ -29,6 +29,8 @@ Take a look at these GitHub repositories to find interesting notebooks:
      - Description
    * - `lsst-sqre/notebook-demo`_
      - Preinstalled demo notebooks. See :doc:`notebook-demo`.
+   * - `lsst-dm/dm-demo-notebooks`_
+     - Notebooks by LSST Data Management that demonstrate LSST DM software.
    * - `lsst-com/notebooks`_
      - A collection point for LSST Commissioning-related Jupyter notebooks.
    * - `LSSTScienceCollaborations/DMStackClub`_
@@ -37,6 +39,7 @@ Take a look at these GitHub repositories to find interesting notebooks:
      - This is the tutorial notebook from LSST Data Management’s onsite tutorials. Check out the ``answers`` branch to run the notebook all the way through — or try to code it yourself from ``master``.
 
 .. _`lsst-sqre/notebook-demo`: https://github.com/lsst-sqre/notebook-demo
+.. _`lsst-dm/dm-demo-notebooks`: https://github.com/lsst-dm/dm-demo-notebooks
 .. _`lsst-com/notebooks`: https://github.com/lsst-com/notebooks
 .. _`LSSTScienceCollaborations/DMStackClub`: https://github.com/LSSTScienceCollaborations/DMStackClub
 .. _`lsst-dm/tutorial-lsst2017`: https://github.com/lsst-dm/tutorial-lsst2017
