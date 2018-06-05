@@ -17,10 +17,26 @@ This tutorial shows you a workflow for developing LSST Science Pipelines package
    For a more comprehensive look at the code development workflow for the LSST Science Pipelines, see the `LSST DM Developer Guide <https://developer.lsst.io/work/flow.html>`__.
    This tutorial only covers procedures particular to working in the Notebook Aspect.
 
+.. _eups-prereqs:
+
+Prerequisites
+=============
+
+Log in with a current daily image
+---------------------------------
+
+When you're developing an LSST Science Pipelines package, you're generally working from a branch based on the package's ``master`` branch.
+To ensure that your package can be compiled and used with other LSST Science Pipelines packages, you need to select a recent daily build of the LSST Science Pipelines when you log into the Notebook Aspect.
+
+If you aren't sure you are running the most recent daily, save your work and :doc:`log out </getting-started/logging-out>`.
+Then :doc:`log back in </getting-started/logging-in>` with the most recent daily build.
+
 Set up Git
-==========
+----------
 
 Before you get started with any development, be sure to :doc:`configure Git and set up your GitHub credentials </environment/git-configuration>` (particularly if you will be pushing code).
+
+.. _eups-tutorial-setup:
 
 Step 1: open a terminal and set up lsst_distrib
 ===============================================
@@ -36,6 +52,8 @@ Follow the onscreen instructions to activate the LSST environment:
    source /opt/lsst/software/stack/loadLSST.bash
    setup lsst_distrib
 
+.. _eups-tutorial-clone:
+
 Step 2: clone an existing package
 =================================
 
@@ -48,6 +66,8 @@ In the same terminal, run:
    cd ~/notebooks
    git clone https://github.com/lsst/pipe_tasks
    cd pipe_tasks
+
+.. _eups-tutorial-setup-package:
 
 Step 3: set up the package
 ==========================
@@ -71,6 +91,8 @@ The other packages from ``lsst_distrib`` are still set up:
 
    eups list -s
 
+.. _eups-tutorial-build:
+
 Step 4: build the package
 =========================
 
@@ -80,6 +102,8 @@ In the same terminal, run:
 .. code-block:: bash
 
    scons
+
+.. _eups-tutorial-notebook-setup:
 
 Step 5: set up the package for notebooks
 ========================================
@@ -91,7 +115,7 @@ In a terminal text editor like Vim or Emacs, create or open ``~/notebooks/.user_
 
 .. code-block:: bash
 
-   setup -k -r ~/notebooks/pipe_base
+   setup -k -r ~/notebooks/pipe_tasks
 
 You can check that this works by :ref:`opening a new notebook with the LSST kernel <lsst-kernel-create>` and running:
 
@@ -101,6 +125,8 @@ You can check that this works by :ref:`opening a new notebook with the LSST kern
    print(lsst.pipe.tasks.__file__)
 
 As you can see, the module’s path is your clone in :file:`~/notebooks/`, rather than the preinstalled package in :file:`/opt/lsst/software/stack`.
+
+.. _eups-tutorial-code:
 
 Step 6: write some code
 =======================
@@ -113,7 +139,7 @@ First, create a Git branch from the terminal:
 
    git checkout -b my-task
 
-Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/notebooks/pipe_base`) and paste these contents into it:
+Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/notebooks/pipe_tasks`) and paste these contents into it:
 
 .. code-block:: python
 
@@ -130,6 +156,8 @@ Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (
 
        def run(self):
            print("Running MyTask")
+
+.. _eups-tutorial-run:
 
 Step 7: run the new code in a notebook
 ======================================
@@ -148,12 +176,16 @@ Then run the task:
    Instead of restarting the notebook’s kernel, you can sometimes reload a module that you’ve previously imported.
    See the Python documentation for `importlib.reload`, including caveats for when this function will not work.
 
+.. _eups-tutorial-cleanup:
+
 Step 8: cleaning up
 ===================
 
 At this point, you will typically use Git to commit this work and push your new branch to GitHub.
 
 After your work is done, you will want to revert the ``~/notebooks/.user_setups`` file so that notebooks use the LSST Science Pipelines packages built into the Notebook Aspect image, instead of your local clone. Delete any lines with ``setup`` commands you no longer need.
+
+.. _eups-tutorial-summary:
 
 Summary
 =======
@@ -164,8 +196,9 @@ Keep these steps in mind while developing LSST Science Pipelines software in the
 
    1. Load the LSST environment (``loadLSST.bash``).
    2. ``setup lsst_distrib``.
-   3. Set up the specific package you’re developing with ``setup -k -r {{path}}``.
-   4. Build the package by running ``scons``.
+   3. Clone the package you're developing.
+   4. Set up the specific package you’re developing with ``setup -k -r {{path}}``.
+   5. Build the package by running ``scons``.
 
 -  **For notebooks,** add a ``setup -k -r {{path}}`` command for your package to ``~/notebooks/.user_setups``.
 
