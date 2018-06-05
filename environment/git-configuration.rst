@@ -9,7 +9,7 @@ Setting up Git
 ==============
 
 At a minimum, configure your name and email.
-Open a `terminal <https://jupyterlab.readthedocs.io/en/latest/user/terminal.html>`__ and run:
+Open a `terminal`_ and run:
 
 .. code-block:: bash
 
@@ -47,7 +47,9 @@ Git LFS for LSST
 ================
 
 The Notebook Aspect includes the `Git LFS <https://git-lfs.github.com>`_ client.
-It is pre-configured to allow anonymous access to LSST’s Git LFS-backed data repositories (such as https://github.com/lsst/afwdata).
 
+Git LFS is preconfigured to allow anonymous access to LSST’s Git LFS-backed data repositories (such as https://github.com/lsst/afwdata).
 Members of the `lsst organization <https://github.com/lsst>`_ on GitHub can set up authenticated Git LFS access to push to LSST’s Git LFS repositories.
 See the `LSST DM Developer Guide <https://developer.lsst.io/git/git-lfs.html#authenticating-for-push-access>`__ for details.
+
+.. _`terminal`: https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
