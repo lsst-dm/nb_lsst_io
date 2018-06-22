@@ -175,6 +175,12 @@ Then run the task:
 
    Instead of restarting the notebook’s kernel, you can sometimes reload a module that you’ve previously imported.
    See the Python documentation for `importlib.reload`, including caveats for when this function will not work.
+   
+.. tip::
+
+   It is sometimes useful to open the notebook as a classic notebook with the same kernel as is running in the JupyterLab environment.
+   To do this, select **Help → Launch Classic Notebook** from the menu at the top of the JupyterLab page.
+   This can be especially helpful if you are trying to debug with `pdb` since `pdb` behaves better in classic notebooks than it currently does in JupyterLab.
 
 .. _eups-tutorial-cleanup:
 
