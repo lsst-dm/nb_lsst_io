@@ -17,7 +17,9 @@ For now, you’ll use NCSA’s VPN, through Cisco AnyConnect, to log into the No
    If you are on an approved network, like NOAO, you can skip the VPN and log in directly.
 
 To use the NCSA VPN, open `vpn.ncsa.illinois.edu <https://vpn.ncsa.illinois.edu>`__ in your web browser.
-Select ``ncsa-vpn-default`` from the **GROUP** menu and enter your NCSA Kerberos username and password.
+Select ``ncsa-vpn-default`` from the **GROUP** menu and enter your NCSA Kerberos username and password
+(if you've forgotten your password, visit https://identity.ncsa.illinois.edu/reset).
+
 The page installs and starts the Cisco AnyConnect application for you.
 
 .. warning::
@@ -37,6 +39,8 @@ Step 2: Log in
 
 Open `lsst-lspdev.ncsa.illinois.edu/nb <https://lsst-lspdev.ncsa.illinois.edu/nb>`__ in your web browser.
 Click the **Sign in with CILogon** button, then enter your NCSA Kerberos credentials on the NCSA CILogon page.
+
+If you've forgotten your password, you can reset it at https://identity.ncsa.illinois.edu/reset.
 
 Once authentication is complete, you’ll be redirected to the Notebook Aspect’s Spawner page.
 
