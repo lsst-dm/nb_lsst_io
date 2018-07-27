@@ -9,12 +9,10 @@ Getting notebooks from GitHub
 =============================
 
 You can clone any Git repository from GitHub to work with its notebooks.
-Be sure to clone into the :file:`~/notebooks/` directory (or a subdirectory of it) so that you can browse the repository with `JupyterLab’s file browser`_:
 
 1. Open the `JupyterLab terminal`_.
-2. ``cd ~/notebooks``
-3. ``git clone https://github.com/{{org}}/{{repo}}``
-4. Open notebooks from `JupyterLab’s file browser`_.
+2. ``git clone https://github.com/{{org}}/{{repo}}``
+3. Open notebooks from `JupyterLab’s file browser`_.
 
 Notebook repositories
 =====================

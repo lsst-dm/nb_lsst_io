@@ -7,7 +7,7 @@ The Notebook Aspect is preloaded with demo notebooks to help you learn about not
 Using the demo notebooks
 ========================
 
-You can find these notebooks in the :file:`notebook-demo` directory of the `JupyterLab file browser <https://jupyterlab.readthedocs.io/en/latest/user/files.html>`_.
+You can find these notebooks in the :file:`notebooks/notebook-demo` directory of the `JupyterLab file browser <https://jupyterlab.readthedocs.io/en/latest/user/files.html>`_.
 Double click the directory, then double click on the notebook to open it.
 You can click **Run** → **Run all Cells** to run the entire notebook, or type :kbd:`shift`\ -\ :kbd:`return` to run one cell at a time.
 
@@ -15,7 +15,7 @@ In the `terminal <https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
 
 .. note::
 
-   The :file:`notebook-demo` directory is hosted at https://github.com/lsst-sqre/notebook-demo.
+   The :file:`notebooks/notebook-demo` directory is hosted at https://github.com/lsst-sqre/notebook-demo.
    Every time you log into the Notebook Aspect, the default branch (called ``prod``) is updated from GitHub.
    Avoid running :command:`git commit` on the ``prod`` branch.
 

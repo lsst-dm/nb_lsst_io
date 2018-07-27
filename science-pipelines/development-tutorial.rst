@@ -63,7 +63,6 @@ In the same terminal, run:
 
 .. code-block:: bash
 
-   cd ~/notebooks
    git clone https://github.com/lsst/pipe_tasks
    cd pipe_tasks
 
@@ -115,7 +114,7 @@ In a terminal text editor like Vim or Emacs, create or open ``~/notebooks/.user_
 
 .. code-block:: bash
 
-   setup -k -r ~/notebooks/pipe_tasks
+   setup -k -r ~/pipe_tasks
 
 You can check that this works by :ref:`opening a new notebook with the LSST kernel <lsst-kernel-create>` and running:
 
@@ -124,7 +123,7 @@ You can check that this works by :ref:`opening a new notebook with the LSST kern
    import lsst.pipe.tasks
    print(lsst.pipe.tasks.__file__)
 
-As you can see, the module’s path is your clone in :file:`~/notebooks/`, rather than the preinstalled package in :file:`/opt/lsst/software/stack`.
+As you can see, the module’s path is your clone in :file:`~/pipe_tasks/`, rather than the preinstalled package in :file:`/opt/lsst/software/stack`.
 
 .. _eups-tutorial-code:
 
@@ -139,7 +138,7 @@ First, create a Git branch from the terminal:
 
    git checkout -b my-task
 
-Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/notebooks/pipe_tasks`) and paste these contents into it:
+Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (inside :file:`~/pipe_tasks`) and paste these contents into it:
 
 .. code-block:: python
 
