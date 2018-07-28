@@ -15,10 +15,6 @@ This page describes the filesystem directories available in the Notebook Aspect.
      - ✅
      - ✅
      - ✅
-   * - :ref:`filesystem-notebooks`
-     - ✅
-     - ✅
-     - ✅
    * - :ref:`filesystem-datasets`
      -
      - ✅
@@ -38,22 +34,21 @@ $HOME
 =====
 
 Your home directory is just that.
-It’s backed by essentially the same storage as your home directory on `lsst-dev`_ in the LSST Data Facility.
-In fact, your :file:`$HOME` directory in the Notebook Aspect *is* the :file:`$HOME/jhome/` directory on `lsst-dev <https://developer.lsst.io/services/lsst-dev.html>`_. 
+
+The :file:`$HOME` directory is also the base directory for the `JupyterLab file browser`_.
+Notebooks and other files need to be inside the :file:`$HOME` directory (or a subdirectory) for you to open them from the `file browser`_.
+
+Inside the :file:`$HOME` directory is a :file:`~/notebooks` directory that you can use to organize your personal notebooks.
+This directory also contains the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` file that you can use to configure the environment your notebooks run in.
 
 Currently there is a 100 GB quota for :file:`$HOME`.
 There is also a limit of 102400 files and subdirectories (inodes) within :file:`$HOME`.
 You can use :ref:`filesystem-project` for larger datasets.
 
-.. _filesystem-notebooks:
+.. note::
 
-~/notebooks
-===========
-
-The :file:`~/notebooks` directory inside your :file:`$HOME` directory is the base directory for the `JupyterLab file browser`_.
-Notebooks and other files need to be inside the :file:`~/notebooks` directory for you to open them from the `file browser`_.
-
-The :file:`~/notebooks` directory is created for you.
+   If you also have an account on `lsst-dev <https://developer.lsst.io/services/lsst-dev.html>`_,
+   you can access your Notebook Aspect home directory via :file:`$HOME/jhome/` from lsst-dev.
 
 .. _filesystem-datasets:
 

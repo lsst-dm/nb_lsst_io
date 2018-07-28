@@ -6,33 +6,40 @@ You need NCSA Kerberos credentials to log into the LSST Science Platform Noteboo
 Members of LSST receive an NCSA Kerberos account as part of your `onboarding <https://developer.lsst.io/team/onboarding.html>`__.
 If you haven’t onboarded into LSST yet, talk to your T/CAM or sponsor.
 
-Step 1: Use the NCSA VPN with Cisco AnyConnect
-==============================================
+If this is your first time logging in, you'll need to take a moment to set up a VPN:
 
-As a development deployment, the Notebook Aspect is not yet directly accessible from the internet.
-For now, you’ll use NCSA’s VPN, through Cisco AnyConnect, to log into the Notebook Aspect.
+- :ref:`vpn-setup`
 
-.. tip::
+Once you have a working VPN, you can log into the LSST Science Platform Notebook Aspect itself:
 
-   If you are on an approved network, like NOAO, you can skip the VPN and log in directly.
+- :ref:`vpn-login`
+- :ref:`nb-login`
+- :ref:`machine-setup`
 
-To use the NCSA VPN, open `vpn.ncsa.illinois.edu <https://vpn.ncsa.illinois.edu>`__ in your web browser.
-Select ``ncsa-vpn-default`` from the **GROUP** menu and enter your NCSA Kerberos username and password
-(if you've forgotten your password, visit https://identity.ncsa.illinois.edu/reset).
+.. _vpn-setup:
 
-The page installs and starts the Cisco AnyConnect application for you.
+Install and configure the NCSA VPN (Cisco AnyConnect and NCSA DUO)
+==================================================================
 
-.. warning::
+To use the notebook aspect from non-approved networks, you need to use the NCSA VPN.
+This requires you to:
 
-   In most browsers, the Java-based VPN installation will fail.
-   Wait for the direct-download fallback to become available and install the AnyConnect client that way.
+- Install the `Cisco AnyConnect client`_ on your computer.
+- Install and enroll in `NCSA DUO`_ on your iPhone or Android device.
 
-   The certificate expiration of the macOS client download is a known issue.
+Follow the documentation `Connecting to the VPN System`_ (external link) for details on using Cisco AnyConnect VPN client and `NCSA DUO`_ for two-factor authentication.
 
-.. tip::
+.. _vpn-login:
 
-   In the future, you can open the AnyConnect application and enter ``vpn.ncsa.illinois.edu`` to get connected.
-   There's no need to go back to the `vpn.ncsa.illinois.edu <https://vpn.ncsa.illinois.edu>`__ website.
+Step 1: Log into the NCSA VPN
+=============================
+
+If you aren't on an approved network, first activate the NCSA VPN.
+Follow the steps a `Connecting to the VPN System`_ (external link) for details on how to do thiis.
+
+If you've forgotten your password, you can reset it by visiting https://identity.ncsa.illinois.edu/reset.
+
+.. _nb-login:
 
 Step 2: Log in
 ==============
@@ -43,6 +50,8 @@ Click the **Sign in with CILogon** button, then enter your NCSA Kerberos credent
 If you've forgotten your password, you can reset it at https://identity.ncsa.illinois.edu/reset.
 
 Once authentication is complete, you’ll be redirected to the Notebook Aspect’s Spawner page.
+
+.. _machine-setup:
 
 Step 3: Select a machine image and size
 =======================================
@@ -86,3 +95,6 @@ Next steps
 -  :doc:`Explore demo notebooks <notebook-demo>` featuring LSST data analysis.
 
 .. _LSST Science Pipelines: https://pipelines.lsst.io
+.. _NCSA DUO: https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA
+.. _Connecting to the VPN System: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-ConnectingtotheVPNSystem
+.. _`Cisco AnyConnect client`: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-CiscoAnyConnectVPNClientDownloads
