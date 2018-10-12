@@ -35,7 +35,7 @@ This notebook uses data from DR14 of the SDSS survey, using the globular cluster
 Firefly.ipynb (Firefly Visualization Demo)
 ------------------------------------------
 
-This notebook is intended to demonstrate the `Firefly <https://mospace.umsystem.edu/xmlui/handle/10355/5346>`__ interactive interface for viewing image data.
+This notebook is intended to demonstrate the Firefly interactive interface for viewing image data.
 It also builds on the pedagogical explanations provided in the `Getting started tutorial <https://pipelines.lsst.io/getting-started/display.html>`__ of the LSST Science Pipelines documentation.
 
 This tutorial seeks to teach you about how to use the LSST Science Pipelines to inspect outputs from ``processCcd.py`` by displaying images and source catalogs in the Firefly image viewer.
