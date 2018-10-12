@@ -23,7 +23,7 @@ Creating a pull request
 =======================
 
 You can contribute directly to the `nb_lsst_io <https://github.com/lsst-dm/nb_lsst_io>`__ repo by creating a pull request.
-If you’re intending to make a substantial change, it’s good idea to create a GitHub issue first with your proposal.
+If you’re intending to make a substantial change, it’s a good idea to create a GitHub issue first with your proposal.
 LSST can’t accept contributions that don’t fit with our strategy and roadmap.
 
 These sections can help you create a successful pull request:
@@ -94,6 +94,8 @@ Here are some tips:
 - Write confidently and precisely, yet also casually.
   Contractions are good.
 
+For further discussion about specific style issues, refer to the `Google Developer Documentation Style Guide <https://developers.google.com/style/>`_.
+
 File names
 ----------
 
@@ -103,9 +105,9 @@ Don’t use underscores or spaces.
 Prose formatting in plain text
 ------------------------------
 
-LSST DM's user documentation is written with soft wrapping, meaning that lines are long as they need to be in the plain text file, and the editor is expected to handle wrapping.
+LSST DM's user documentation is written with soft wrapping, meaning that lines are as long as they need to be in the plain text file and the text editor is expected to handle wrapping.
 Never hard wrap to an arbitrary line length.
-Soft wrapping makes editing more approachable for more people (particularly those using the GitHub editor), and makes pull request line comments more useful.
+Soft wrapping makes editing more approachable for more people (particularly those using the GitHub editor) and makes pull request line comments more useful.
 
 More specifically, use `semantic line formatting <http://rhodesmill.org/brandon/2012/one-sentence-per-line/>`__.
 Generally this means that each sentence should be its own line in the text file.
@@ -116,7 +118,7 @@ Titles and headings
 Use sentence case for headings (don’t use title case).
 Capitalize proper nouns as usual.
 
-Don’t use more than two levels of heading hierarchy.
+Try not to use more than two levels of heading hierarchy.
 Using more than two levels of hierarchy might suggest an information architecture issue.
 
 Also keep in mind DM’s `reStructuredText heading styles <https://developer.lsst.io/restructuredtext/style.html#sections>`__.
@@ -124,5 +126,5 @@ Also keep in mind DM’s `reStructuredText heading styles <https://developer.lss
 Links
 -----
 
-Never use ``here`` as link text.
+Never use "here" as link text.
 Instead, make the relevant noun or phrase the link.
