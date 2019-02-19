@@ -44,7 +44,7 @@ If you've forgotten your password, you can reset it by visiting https://identity
 Step 2: Log in
 ==============
 
-Open `lsst-lspdev.ncsa.illinois.edu/nb <https://lsst-lspdev.ncsa.illinois.edu/nb>`__ in your web browser.
+Open `lsst-lsp-stable.ncsa.illinois.edu/nb <https://lsst-lsp-stable.ncsa.illinois.edu/nb>`__ in your web browser.
 Click the **Sign in with CILogon** button, then enter your NCSA Kerberos credentials on the NCSA CILogon page.
 
 If you've forgotten your password, you can reset it at https://identity.ncsa.illinois.edu/reset.

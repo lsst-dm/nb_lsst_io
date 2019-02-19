@@ -24,4 +24,4 @@ Slack
 =====
 
 We encourage you to use the `LSST Community forum <https://community.lsst.org/c/support/lsp>`__ as much as possible, but on occasion you might need to work directly with an LSST engineer to debug an issue in real-time.
-You can use the `#dm-lsp-users <https://lsstc.slack.com/channels/dm-lsp-users>`__ Slack channel for that.
+You can use the `#dm-lsp <https://lsstc.slack.com/channels/dm-lsp>`__ Slack channel for that.
