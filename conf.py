@@ -83,7 +83,9 @@ intersphinx_mapping = {
 
 # -- Options for linkcheck builder ----------------------------------------
 
-linkcheck_ignore = [r'^https://lsst-lspdev\.ncsa\.illinois\.edu',
+# The linkcheck build often failed when trying to check the actual LSP
+# URLs, so we need to ignore those URLs here.
+linkcheck_ignore = [r'^https://lsst-lsp-stable\.ncsa\.illinois\.edu',
                     # ignored because the homepage isn't present yet (in dev)
                     r'^https://nb\.lsst\.io$']
 linkcheck_retries = 2
