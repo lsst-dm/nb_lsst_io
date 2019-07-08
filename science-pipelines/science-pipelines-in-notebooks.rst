@@ -86,7 +86,7 @@ For example, you can define environment variables that are accessible from noteb
 
 .. note::
 
-   Environment variables exported from :doc:`~/.bashrc and ~/.bash_profile </environment/shell-configuration>` **are not** accessible from notebooks.
+   Environment variables exported from :doc:`~/.bashrc </environment/shell-configuration>` **are not** accessible from notebooks.
    You need to export those variables from :file:`~/notebooks/.user_setups` instead.
 
 .. _lsst-kernel-verify-user-setups:
