@@ -13,8 +13,8 @@ These documents describe the Notebook Aspect and the LSST Science Platform in ge
 
 Related open-source repositories:
 
-- `lsst-sqre/jupyterlabdemo <https://github.com/lsst-sqre/jupyterlabdemo>`__: deployment of JupyterLab for the LSST Notebook Aspect
-- `lsst-sqre/jupyterutils <https://github.com/lsst-sqre/jupyterutils>`__: utilities for the Jupyter environment
+- `lsst-sqre/jupyterlabdemo <https://github.com/lsst-sqre/nublado>`__: deployment of JupyterLab for the LSST Notebook Aspect
+- `lsst-sqre/jupyterutils <https://github.com/lsst-sqre/jupyterhubutils>`__: utilities for the JupyterHub environment
 - `lsst-sqre/jupyterlabutils <https://github.com/lsst-sqre/jupyterlabutils>`__: utilities for JupyterLab containers in the LSST Science Platform environment
 - `lsst-sqre/notebook-demo <https://github.com/lsst-sqre/notebook-demo>`__: demo notebooks for the LSST Notebook Aspect
 - `lsst-dm/nb_lsst_io <https://github.com/lsst-dm/nb_lsst_io>`__: this website
