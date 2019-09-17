@@ -58,7 +58,7 @@ The ~/notebooks directory
 The :file:`~/notebooks` directory is intended as the top of a subtree within which you can organize your personal notebooks.
 Within this directory, two items are pre-created:
 
-- A clone of the `lsst-sqre/notebook-demo`_ repository is created from Github at :file:`~/notebooks/notebook-demo`, and the ``prod`` branch of this repository is regularly updated from Github in this clone.  See the :doc:`discussion of demo notebooks <../getting-started/notebook-demo>` for more details.
+- A clone of the `lsst-sqre/notebook-demo`_ repository is created from GitHub at :file:`~/notebooks/notebook-demo`. The ``prod`` branch of this repository is regularly updated from GitHub in this clone.  See the :doc:`../getting-started/notebook-demo` page to learn more.
 - You can use the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` file to configure the environment your notebooks run in.
 
 The ~/DATA directory
