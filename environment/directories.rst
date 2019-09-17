@@ -36,10 +36,7 @@ $HOME
 Your home directory is just that.
 
 The :file:`$HOME` directory is also the base directory for the `JupyterLab file browser`_.
-Notebooks and other files need to be inside the :file:`$HOME` directory (or a subdirectory) for you to open them from the `file browser`_.
-
-Inside the :file:`$HOME` directory is a :file:`~/notebooks` directory that you can use to organize your personal notebooks.
-This directory also contains the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` file that you can use to configure the environment your notebooks run in.
+Notebooks and other files need to be inside the :file:`$HOME` directory (or a subdirectory) for you to see and open them from the `file browser`_.
 
 Currently there is a 100 GB quota for :file:`$HOME`.
 There is also a limit of 102400 files and subdirectories (inodes) within :file:`$HOME`.
@@ -49,6 +46,20 @@ You can use :ref:`filesystem-project` for larger datasets.
 
    If you also have an account on `lsst-dev <https://developer.lsst.io/services/lsst-dev.html>`_,
    you can access your Notebook Aspect home directory via :file:`$HOME/jhome/` from lsst-dev.
+
+Preinstalled subdirectories
+---------------------------
+
+Within the :file:`$HOME` directory a number of directories are pre-created for new users.
+
+:file:`~/notebooks`
+
+The :file:`~/notebooks` directory is intended as the top of a subtree within which you can organize your personal notebooks.
+Within this directory, two items are pre-created:
+
+- A clone of the `lsst-sqre/notebook-demo`_ repository is created from Github at :file:`~/notebooks/notebook-demo`, and the ``prod`` branch of this repository is regularly updated from Github in this clone.  See the :doc:`discussion of demo notebooks <../getting-started/notebook-demo>` for more details.
+- You can use the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` file to configure the environment your notebooks run in.
+
 
 .. _filesystem-datasets:
 
@@ -80,3 +91,4 @@ There is no disaster recovery or quota, but there is a purge cycle.
 .. _`Common Dataset Organization and Policy`: https://developer.lsst.io/services/datasets.html
 .. _`JupyterLab file browser`:
 .. _`file browser`: https://jupyterlab.readthedocs.io/en/latest/user/files.html
+.. _`lsst-sqre/notebook-demo`: https://github.com/lsst-sqre/notebook-demo
