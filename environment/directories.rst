@@ -61,22 +61,26 @@ Within this directory, two items are pre-created:
 - A clone of the `lsst-sqre/notebook-demo`_ repository is created from Github at :file:`~/notebooks/notebook-demo`, and the ``prod`` branch of this repository is regularly updated from Github in this clone.  See the :doc:`discussion of demo notebooks <../getting-started/notebook-demo>` for more details.
 - You can use the :ref:`~/notebooks/.user_setups <lsst-kernel-user-setups>` file to configure the environment your notebooks run in.
 
-:file:`~/DATA`
+The ~/DATA directory
+^^^^^^^^^^^^^^^^^^^^
 
 The :file:`~/DATA` directory is pre-created, empty, as a place for tutorial notebooks to load input datasets.
-If it is deleted, some notebooks will attempt to re-create it, while others may fail.
+If you delete it, some notebooks will attempt to re-create it, while others may fail.
 
-:file:`~/WORK`
+The ~/WORK directory
+^^^^^^^^^^^^^^^^^^^^
 
 The :file:`~/WORK` directory is pre-created, empty, as a place for some tutorial notebooks to write outputs (e.g., "rerun" directories).
-If it is deleted, these notebooks may fail.
+If you delete it, these notebooks may fail.
 
-:file:`~/dask`
+The ~/dask directory
+^^^^^^^^^^^^^^^^^^^^
 
 The :file:`~/dask` directory is pre-created and holds an automatically updated `Dask <https://dask.org/>`_ configuration file, :file:`~/dask/dask_worker.yml`.
 This file is recreated on each login, populated with a template that builds dask nodes of the appropriate size and with the appropriate disk mounts.
 
-:file:`~/idleculler`
+The ~/idleculler directory
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The :file:`~/idleculler` directory is used for logfile output from the process that watches for idle sessions.
 This file, :file:`culler.output`, may be deleted when it begins to take up a lot of space; it will be automatically recreated.
