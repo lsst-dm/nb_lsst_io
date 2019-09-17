@@ -52,7 +52,8 @@ Preinstalled subdirectories
 
 Within the :file:`$HOME` directory a number of directories are currently pre-created for new users.
 
-:file:`~/notebooks`
+The ~/notebooks directory
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The :file:`~/notebooks` directory is intended as the top of a subtree within which you can organize your personal notebooks.
 Within this directory, two items are pre-created:
