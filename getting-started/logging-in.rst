@@ -45,7 +45,10 @@ Step 2: Log in
 ==============
 
 Open `lsst-lsp-stable.ncsa.illinois.edu/nb <https://lsst-lsp-stable.ncsa.illinois.edu/nb>`__ in your web browser.
-Click the **Sign in with CILogon** button, then enter your NCSA Kerberos credentials on the NCSA CILogon page.
+Click the **Sign in with CILogon** button.
+This will take you to a page where you can choose an identity provider.
+You must choose NCSA as the provider unless you have explicitly set up another identity provider (type NCSA in the search box to find it).
+Once you have chosen NCSA as the identity provider, click the **Log On** button and you will be taken to a page where you can enter your NCSA Kerberos credentials.
 
 If you've forgotten your password, you can reset it at https://identity.ncsa.illinois.edu/reset.
 
