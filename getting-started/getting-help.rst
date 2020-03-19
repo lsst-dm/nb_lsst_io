@@ -25,3 +25,16 @@ Slack
 
 We encourage you to use the `LSST Community forum <https://community.lsst.org/c/support/lsp>`__ as much as possible, but on occasion you might need to work directly with an LSST engineer to debug an issue in real-time.
 You can use the `#dm-lsp <https://lsstc.slack.com/channels/dm-lsp>`__ Slack channel for that.
+
+Diagnostics
+===========
+
+If you are reporting an issue over Slack, one of the first questions you
+will be asked is "what node are you running on?"  Determine that (inside
+a Jupyterlab notebook, or if you prefer, from a python process in the
+Terminal) with the following:
+::
+
+    from jupyterlabutils.notebook.utils import get_node
+    get_node()
+
