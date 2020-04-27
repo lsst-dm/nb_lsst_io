@@ -87,7 +87,8 @@ intersphinx_mapping = {
 # URLs, so we need to ignore those URLs here.
 linkcheck_ignore = [r'^https://lsst-lsp-stable\.ncsa\.illinois\.edu',
                     # ignored because the homepage isn't present yet (in dev)
-                    r'^https://nb\.lsst\.io$']
+                    r'^https://nb\.lsst\.io$',
+                    r'^http(s)*://ls.st']
 linkcheck_retries = 2
 
 # -- Options for HTML output ----------------------------------------------
