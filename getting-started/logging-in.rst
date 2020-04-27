@@ -35,7 +35,9 @@ Step 1: Log into the NCSA VPN
 =============================
 
 If you aren't on an approved network, first activate the NCSA VPN.
-Follow the steps a `Connecting to the VPN System`_ (external link) for details on how to do thiis.
+Follow the steps a `Connecting to the VPN System`_ (external link) for details on how to do this.
+Note that there are several profiles available.
+Please use ``ncsa-vpn-default`` unless you have reasons not to.
 
 If you've forgotten your password, you can reset it by visiting https://identity.ncsa.illinois.edu/reset.
 
