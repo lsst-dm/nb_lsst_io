@@ -5,7 +5,7 @@ Science Platform Tokens
 The Notebook Aspect of the Rubin Observatory Science Platform provides access tokens for interacting with other services provided by the Science Platform.
 An example is the TAP service provided by the API Aspect.
 When interacting with authenticated services for within the Notebook Aspect you typically doesn't need to interact with the access tokens since the various clients are able to pick up the token from your user environment.
-A feature of the Notebook Aspect is that this access token can also be used outside the Notebook Aspect to e.g. access the TAP service from TOPCAT on a local machine.
+This access token can also be used outside the Notebook Aspect to access services from a local machine (for example, to access the TAP service from `TOPCAT`_).
 
 This page will give you an introduction to the access token, where to find it, how to inspect it, and how to use it in an environment outside the Notebook Aspect.
 Note that the access token has a finite lifetime and is refreshed on each login to the Notebook Aspect.
@@ -23,8 +23,7 @@ From within a `terminal`_ execute the following command.
 
 .. _`terminal`: https://jupyterlab.readthedocs.io/en/latest/user/terminal.html
 
-Provided with the environment is a notebook that allows you to inspect aspects of the token using the ``analyze`` endpoint of the authentication service.
-By default, this notebook is found at ``~/notebooks/notebook-demo/token-info.ipynb``.
+The environment includes a notebook, at ``~/notebooks/notebook-demo/token-info.ipynb``, that allows you to inspect a token.
 Executing the two cells in the notebook will provide information about token creation time and lifetime among other things.
 You will note from the above notebook that the token is also provided as the value of the environment variable ``ACCESS_TOKEN``, but the file version should be considered primary.
 
@@ -32,7 +31,7 @@ Using a token outside the Science Platform
 ==========================================
 
 Following is a recipe for an example workflow that uses the access token taken from a JupyterLab session to access the Science Platform TAP service from a local computer using TOPCAT.
-The hope is that you can use the specific case presented here to generalize to other scenarios.
+You can apply similar steps to other use cases.
 
 1. `Open a terminal`_.
 
@@ -44,7 +43,7 @@ The hope is that you can use the specific case presented here to generalize to o
       $ cat ~/.access_token
       eyJ0eXAiOiJKV1QiLCJhbGci...
 
-3. Copy the entire token string to your clipboard
+3. Copy the entire token string to your clipboard.
 
 4. On your local machine open up `TOPCAT`_.
    This will require having `Java`_ installed.
