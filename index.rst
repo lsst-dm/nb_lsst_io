@@ -54,6 +54,13 @@ Configuration:
    environment/shell-configuration
    environment/git-configuration
 
+Tokens:
+
+.. toctree::
+   :maxdepth: 1
+
+   environment/tokens
+
 Project info
 ============
 
