@@ -32,9 +32,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'LSST Science Platform Notebook Aspect'
-copyright = '2018 Association of Universities for Research in Astronomy'
-author = 'LSST Data Management'
+project = 'Rubin Science Platform Notebook Aspect Documentation'
+copyright = '2018-2021 Association of Universities for Research in Astronomy'
+author = 'Vera C. Rubin Observatory'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -128,7 +128,7 @@ html_theme_options = {'logotext': project}
 # html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'LSP Notebook Aspect'
+html_short_title = 'RSP Notebook Aspect Documentation'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
