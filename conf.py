@@ -66,7 +66,11 @@ language = None
 # directories to ignore when looking for source files.
 exclude_patterns = [
     '_build',
-    'README.rst'
+    'README.rst',
+    '.tox',
+    'conf.py',
+    '.github',
+    '.git',
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
