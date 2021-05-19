@@ -39,13 +39,13 @@ You can install additional Python packages with :command:`pip`:
 1. `Open a terminal`_.
 
 2. Install the package with :command:`pip`:
-   
+
    .. code-block:: bash
-   
+
       pip install --user {{package name}}
-      
+
    .. note::
-   
+
       The ``--user`` flag is necessary because you don’t have root access.
 
 Packages that you install with ``pip install --user ...`` are available from **both** the LSST and regular Python 3 kernels.

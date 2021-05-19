@@ -24,9 +24,9 @@ Setting up the LSST Science Pipelines
       source /opt/lsst/software/stack/loadLSST.bash
 
 3. Set up LSST Science Pipelines packages:
-   
+
    .. code-block:: bash
-   
+
       setup lsst_distrib
 
 Now you can run the Pipelines’s command-line tasks.

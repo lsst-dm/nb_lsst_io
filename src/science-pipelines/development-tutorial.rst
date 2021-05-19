@@ -142,7 +142,7 @@ Second, create a new file for Task at :file:`python/lsst/pipe/tasks/myTask.py` (
 
 .. code-block:: python
 
-   __all__ = ('MyTask',) 
+   __all__ = ('MyTask',)
 
    from lsst.pipe.base import Task
    from lsst.pex.config import Config
@@ -174,7 +174,7 @@ Then run the task:
 
    Instead of restarting the notebook’s kernel, you can sometimes reload a module that you’ve previously imported.
    See the Python documentation for `importlib.reload`, including caveats for when this function will not work.
-   
+
 .. tip::
 
    It is sometimes useful to open the notebook as a classic notebook with the same kernel as is running in the JupyterLab environment.

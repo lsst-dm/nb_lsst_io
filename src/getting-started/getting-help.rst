@@ -14,7 +14,7 @@ For more information about the LSST Science Pipelines software included in the N
 LSST Community forum
 ====================
 
-Use the `LSST Science Platform category <https://community.lsst.org/c/support/lsp>`__ on the LSST Community forum to get help from LSST staff and fellow users. 
+Use the `LSST Science Platform category <https://community.lsst.org/c/support/lsp>`__ on the LSST Community forum to get help from LSST staff and fellow users.
 You can even request new features, like preinstalled software, Python packages, and JupyterLab extensions.
 
 Also, we’d love to learn about your work on the Notebook Aspect.

@@ -14,7 +14,7 @@ This documentation covers the https://lsst-lsp-stable.ncsa.illinois.edu/nb deplo
 Getting started
 ===============
 
-.. toctree:: 
+.. toctree::
    :maxdepth: 1
 
    getting-started/logging-in
