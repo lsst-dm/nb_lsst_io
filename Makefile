@@ -8,8 +8,9 @@ help:
 
 .PHONY: init
 init:
-	pip install -U tox
+	pip install -U tox pre-commit
 	rm -rf .tox
+	pre-commit install
 
 .PHONY: clean
 clean:
