@@ -12,7 +12,7 @@ certifi==2020.12.5
     # via requests
 chardet==4.0.0
     # via requests
-click==8.0.0
+click==8.0.1
     # via documenteer
 documenteer==0.6.9
     # via -r requirements/main.in
@@ -29,16 +29,14 @@ idna==2.10
     # via requests
 imagesize==1.2.0
     # via sphinx
-jinja2==2.11.3
+jinja2==3.0.1
     # via sphinx
 latexcodec==2.0.1
     # via pybtex
 lsst-sphinx-bootstrap-theme==0.2.2
     # via -r requirements/main.in
-markupsafe==1.1.1
-    # via
-    #   jinja2
-    #   sphinx
+markupsafe==2.0.1
+    # via jinja2
 packaging==20.9
     # via sphinx
 pybtex-docutils==1.0.0
@@ -55,6 +53,7 @@ pytz==2021.1
     # via babel
 pyyaml==5.4.1
     # via
+    #   -r requirements/main.in
     #   documenteer
     #   pybtex
 requests==2.25.1
@@ -69,7 +68,7 @@ smmap==4.0.0
     # via gitdb
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==4.0.1
+sphinx==4.0.2
     # via
     #   documenteer
     #   sphinxcontrib-bibtex
@@ -79,13 +78,13 @@ sphinxcontrib-bibtex==2.2.1
     # via documenteer
 sphinxcontrib-devhelp==1.0.2
     # via sphinx
-sphinxcontrib-htmlhelp==1.0.3
+sphinxcontrib-htmlhelp==2.0.0
     # via sphinx
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-qthelp==1.0.3
     # via sphinx
-sphinxcontrib-serializinghtml==1.1.4
+sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 urllib3==1.26.4
     # via requests

@@ -1,6 +1,10 @@
-import lsst_sphinx_bootstrap_theme
+from pathlib import Path
 
-# -- General configuration ------------------------------------------------
+import lsst_sphinx_bootstrap_theme
+import yaml
+from jinja2 import FileSystemLoader, Environment, select_autoescape
+
+# -- Sphinx extensions -------------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -11,6 +15,39 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
 ]
+
+# -- Substitutions and RSP-specific content ----------------------------------
+
+# rsp-environments.yaml is keyed by environment tag name and contains
+# metadata about each RSP environment.
+env_yaml = Path(__file__).parent.joinpath("rsp-environments.yaml").read_text()
+rsp_envs = yaml.safe_load(env_yaml)
+env_names = rsp_envs.keys()
+# Select the environment given the sphinx tag (-t on sphinx-build CLI)
+# Default to idfprod if a tag is not set.
+rsp_env = None
+for env_name in rsp_envs.keys():
+    if env_name in tags:  # noqa: F821
+        rsp_env = rsp_envs[env_name]
+        break
+if rsp_env is None:
+    rsp_env = rsp_envs['idfprod']
+
+_config_template_loader = FileSystemLoader(".")
+_jinja_env = Environment(
+    loader=_config_template_loader,
+    autoescape=select_autoescape()
+)
+templated_epilog = _jinja_env.get_template("rst_epilog.jinja").render(
+    **rsp_env
+)
+
+rst_epilog = f"""
+
+{templated_epilog}
+"""
+
+# -- General configuration ------------------------------------------------
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
