@@ -60,6 +60,9 @@ linkcheck_retries = 2
 
 # -- Options for HTML output ----------------------------------------------
 
+# Enables <link ref="canonical" href=<...>> canonical URL metadata
+html_baseurl = "https://nb.lsst.io"
+
 templates_path = [
     '_templates',
     lsst_sphinx_bootstrap_theme.get_html_templates_path()
