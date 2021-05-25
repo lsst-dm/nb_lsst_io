@@ -6,10 +6,20 @@
 LSST Science Platform Notebook Aspect Documentation
 ###################################################
 
-The Notebook Aspect enables you to do your science at the LSST Data Facility, with the LSST Science Pipelines, a full suite of development tools, and your own Python code.
+The Notebook Aspect enables you to do your science in your web browser by creating and running Jupyter Notebooks next to the data within the |rsp-at|.
 The Notebook Aspect is powered by the JupyterLab_ project.
 
-This documentation covers the https://lsst-lsp-stable.ncsa.illinois.edu/nb deployment.
+|log-in|
+
+.. jinja:: rsp
+
+   {% if not primary %}
+   .. important::
+
+      This documentation covers the |rsp-at|, an environment for Rubin Observatory staff.
+      For :abbr:`DP0.1 (Data Preview 0.1)`\ , please use the `Notebook Aspect documentation for the IDF (Interim Data Facility) <https://nb.lsst.io>`__\ .
+   {% endif %}
+
 
 Getting started
 ===============
