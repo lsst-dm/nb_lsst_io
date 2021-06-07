@@ -14,6 +14,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
+    'sphinxcontrib.jinja',
 ]
 
 # -- Substitutions and RSP-specific content ----------------------------------
@@ -46,6 +47,11 @@ rst_epilog = f"""
 
 {templated_epilog}
 """
+
+# Configure Jinja Sphinx extension
+jinja_contexts = {
+    'rsp': rsp_env
+}
 
 # -- General configuration ------------------------------------------------
 
