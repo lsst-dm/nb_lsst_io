@@ -10,6 +10,8 @@ help:
 init:
 	pip install -U tox pre-commit
 	rm -rf .tox
+	pip install -r requirements/main.txt
+	pip install -r requirements/dev.txt
 	pre-commit install
 
 .PHONY: clean
@@ -21,5 +23,6 @@ clean:
 update-deps:
 	pip install --upgrade pip-tools pip setuptools
 	pip-compile --upgrade --build-isolation --output-file requirements/main.txt requirements/main.in
+	pip-compile --upgrade --build-isolation --output-file requirements/dev.txt requirements/dev.in
 
 update: update-deps init

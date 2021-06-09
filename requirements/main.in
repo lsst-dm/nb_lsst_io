@@ -1,7 +1,7 @@
 # Editable Sphinx project dependencies
 # Add direct Sphinx build dependencies.
 #
-# After editing, update requirements/dev.txt by running:
+# After editing, update requirements/main.txt by running:
 #     make update-deps
 
 documenteer
