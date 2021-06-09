@@ -75,7 +75,10 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Rubin Science Platform Notebook Aspect Documentation'
+if rsp_env["primary"]:
+    project = 'Rubin Science Platform Notebook Aspect Documentation'
+else:
+    project = f"RSP at the {rsp_env['name']}: Notebook Aspect Documentation"
 copyright = '2018-2021 Association of Universities for Research in Astronomy'
 author = 'Vera C. Rubin Observatory'
 
@@ -136,7 +139,7 @@ html_theme_options = {'logotext': project}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "<project>"
+html_title = project
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = 'RSP Notebook Aspect Documentation'
