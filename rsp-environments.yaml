@@ -5,6 +5,9 @@
 # rules as Python variables. The "phalanx" key effectively translates that
 # tag into an environment defined in phalanx:
 # https://github.com/lsst-sqre/phalanx/tree/master/science-platform
+#
+# A JSON schema for this file is available in
+# rsp-environments.schema.json
 
 base:
   phalanx: base
