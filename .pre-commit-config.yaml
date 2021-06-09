@@ -33,3 +33,11 @@ repos:
     hooks:
       - id: flake8
         exclude: conf\.py$
+
+  - repo: local
+    hooks:
+      - id: rsplint
+        name: Lint rsp-environments.yaml
+        entry: rsplint.py
+        language: script
+        files: "^rsp-environments\\.yaml$"
