@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "phalanx": {
+        "type": "string"
+      },
+      "primary": {
+        "type": "boolean"
+      },
+      "name": {
+        "type": "string"
+      },
+      "vpn": {
+        "type": "boolean"
+      },
+      "ltdedition": {
+        "type": "string"
+      },
+      "urls": {
+        "type": "object",
+        "properties": {
+          "squareone": {
+            "type": "string",
+            "format": "uri"
+          },
+          "nb": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "requiredProperties": [
+          "squareone",
+          "nb"
+        ]
+      },
+      "github_teams": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      }
+    },
+    "requiredProperties": [
+      "phalanx",
+      "primary",
+      "name",
+      "vpn",
+      "ltdedition",
+      "urls"
+    ]
+  }
+}
