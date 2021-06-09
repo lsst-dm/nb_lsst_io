@@ -45,6 +45,17 @@ templated_epilog = _jinja_env.get_template("rst_epilog.jinja").render(
 
 rst_epilog = f"""
 
+.. _DP0.1 Guide: https://dp0-1.lsst.io/
+.. _LSST Science Pipelines: https://pipelines.lsst.io
+.. _NCSA DUO: https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA
+.. _Connecting to the VPN System: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-ConnectingtotheVPNSystem
+.. _`Cisco AnyConnect client`: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-CiscoAnyConnectVPNClientDownloads
+
+.. |slack-rsp-team| replace:: `#dm-rsp-team <https://lsstc.slack.com/archives/C8EEUGDSA>`__
+.. |slack-com-square| replace:: `#com-square-support <https://lsstc.slack.com/archives/CM65SGAJE>`__
+.. |slack-rubin-it| replace:: `#rubinobs-it-informal <https://lsstc.slack.com/archives/CDY9NGNJ1>`__
+.. |slack-chile-it| replace:: `#rubinobs-it-chile <https://lsstc.slack.com/archives/CTND9SPLY>`__
+
 {templated_epilog}
 """
 
@@ -79,7 +90,9 @@ today_fmt = '%Y-%m-%d'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['README.md']
+exclude_patterns = [
+    '**/*.in.rst',  # rst files meant to be used for include directives
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'

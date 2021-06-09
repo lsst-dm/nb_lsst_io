@@ -27,6 +27,7 @@ Getting started
 .. toctree::
    :maxdepth: 1
 
+   getting-started/account
    getting-started/logging-in
    getting-started/notebook-demo
    getting-started/repositories
