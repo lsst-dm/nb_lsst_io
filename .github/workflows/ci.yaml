@@ -16,6 +16,12 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: Install tox
+        run: pip install tox
+
+      - name: Run mypy
+        run: tox -e typing
+
       - name: Run pre-commit
         uses: pre-commit/action@v2.0.3
 
