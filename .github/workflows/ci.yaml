@@ -19,11 +19,11 @@ jobs:
       - name: Install tox
         run: pip install tox
 
-      - name: Run mypy
+      - name: Run type checking
         run: tox -e typing
 
-      - name: Run pre-commit
-        uses: pre-commit/action@v2.0.3
+      - name: Run precommit hooks
+        run: tox -e precommit
 
   build:
     runs-on: ubuntu-latest
