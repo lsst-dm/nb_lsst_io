@@ -10,8 +10,6 @@ help:
 init:
 	pip install -U tox pre-commit
 	rm -rf .tox
-	pip install -r requirements/main.txt
-	pip install -r requirements/dev.txt
 	pre-commit install
 
 .PHONY: clean

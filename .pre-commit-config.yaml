@@ -47,6 +47,9 @@ repos:
     hooks:
       - id: rsplint
         name: Lint rsp-environments.yaml
-        entry: rsplint.py
-        language: script
+        entry: python rsplint.py
+        language: python
         files: "^rsp-environments\\.yaml$"
+        additional_dependencies:
+          - "requests"
+          - "PyYAML"
