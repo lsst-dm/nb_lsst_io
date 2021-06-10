@@ -49,6 +49,9 @@ rst_epilog = f"""
 .. _NCSA DUO: https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA
 .. _Connecting to the VPN System: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-ConnectingtotheVPNSystem
 .. _`Cisco AnyConnect client`: https://wiki.ncsa.illinois.edu/display/cybersec/Virtual+Private+Network+%28VPN%29+Service#VirtualPrivateNetwork(VPN)Service-CiscoAnyConnectVPNClientDownloads
+.. _venv: https://docs.python.org/3/tutorial/venv.html
+.. _tox: https://tox.readthedocs.io/en/latest/
+.. _pre-commit: https://pre-commit.com
 
 .. |slack-rsp-team| replace:: `#dm-rsp-team <https://lsstc.slack.com/archives/C8EEUGDSA>`__
 .. |slack-com-square| replace:: `#com-square-support <https://lsstc.slack.com/archives/CM65SGAJE>`__
