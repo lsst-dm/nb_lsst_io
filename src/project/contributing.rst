@@ -3,9 +3,9 @@ Contributing to the docs
 ########################
 
 This documentation is open source.
-LSST welcomes contributions that make this documentation more useful and accurate.
+Rubin Observatory welcomes contributions that make this documentation more useful and accurate.
 
-Keep in mind that everyone participating in this project is expected to follow the LSST DM `Team Culture and Conduct Standards <https://developer.lsst.io/team/code-of-conduct.html>`__.
+Keep in mind that everyone participating in this project is expected to follow the Rubin Observatory LSST Data Management `Team Culture and Conduct Standards <https://developer.lsst.io/team/code-of-conduct.html>`__.
 
 .. _contributing-issue:
 
@@ -24,7 +24,7 @@ Creating a pull request
 
 You can contribute directly to the `nb_lsst_io <https://github.com/lsst-dm/nb_lsst_io>`__ repo by creating a pull request.
 If you’re intending to make a substantial change, it’s a good idea to create a GitHub issue first with your proposal.
-LSST can’t accept contributions that don’t fit with our strategy and roadmap.
+Rubin Observatory can’t accept contributions that don’t fit with our strategy and roadmap.
 
 These sections can help you create a successful pull request:
 
@@ -70,7 +70,7 @@ Documentation style guide
 =========================
 
 This documentation is written in reStructuredText.
-The `LSST DM reStructuredText style guide <https://developer.lsst.io/restructuredtext/style.html>`__ can help you create effective reStructuredText.
+The `DM reStructuredText style guide <https://developer.lsst.io/restructuredtext/style.html>`__ can help you create effective reStructuredText.
 
 Style and voice
 ---------------
@@ -84,7 +84,7 @@ Here are some tips:
 
 - Address the user directly (“you can…”).
   Never use “we” since that’s ambiguous.
-  If “we” means “LSST,” then name “LSST.”
+  If “we” means “Rubin Observatory,” then name “Rubin Observatory.”
   If “we” means the user, then say “you.”
   Even in tutorials, don’t use “we” to refer to an imaginary writer assisting the user.
 
@@ -105,7 +105,7 @@ Don’t use underscores or spaces.
 Prose formatting in plain text
 ------------------------------
 
-LSST DM's user documentation is written with soft wrapping, meaning that lines are as long as they need to be in the plain text file and the text editor is expected to handle wrapping.
+DM's user documentation is written with soft wrapping, meaning that lines are as long as they need to be in the plain text file and the text editor is expected to handle wrapping.
 Never hard wrap to an arbitrary line length.
 Soft wrapping makes editing more approachable for more people (particularly those using the GitHub editor) and makes pull request line comments more useful.
 

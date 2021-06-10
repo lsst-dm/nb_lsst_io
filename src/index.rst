@@ -2,9 +2,9 @@
    :width: 200px
    :align: right
 
-###################################################
-LSST Science Platform Notebook Aspect Documentation
-###################################################
+####################################################
+Rubin Science Platform Notebook Aspect Documentation
+####################################################
 
 The Notebook Aspect enables you to do your science in your web browser by creating and running Jupyter Notebooks next to the data within the |rsp-at|.
 The Notebook Aspect is powered by the JupyterLab_ project.
