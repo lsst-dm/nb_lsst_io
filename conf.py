@@ -10,11 +10,13 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx.ext.autodoc",
     "sphinx.ext.doctest",
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx.ext.ifconfig",
     "sphinxcontrib.jinja",
+    "sphinx-jsonschema",
 ]
 
 # -- Substitutions and RSP-specific content ----------------------------------
@@ -52,6 +54,9 @@ rst_epilog = f"""
 .. _venv: https://docs.python.org/3/tutorial/venv.html
 .. _tox: https://tox.readthedocs.io/en/latest/
 .. _pre-commit: https://pre-commit.com
+.. _Phalanx deployment repository: https://github.com/lsst-sqre/phalanx
+.. _sphinx-jinja: https://github.com/tardyp/sphinx-jinja
+.. _jinja: https://jinja.palletsprojects.com/en/latest/
 
 .. |slack-rsp-team| replace:: `#dm-rsp-team <https://lsstc.slack.com/archives/C8EEUGDSA>`__
 .. |slack-com-square| replace:: `#com-square-support <https://lsstc.slack.com/archives/CM65SGAJE>`__

@@ -80,6 +80,8 @@ Project info
 
    project/implementation
    project/contributing
+   project/environment-specific-documentation
+   project/rsp-environments-yaml
    project/license
 
 .. _JupyterLab: https://jupyterlab.readthedocs.io/en/latest/

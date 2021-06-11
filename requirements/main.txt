@@ -20,6 +20,7 @@ docutils==0.17.1
     # via
     #   pybtex-docutils
     #   sphinx
+    #   sphinx-jsonschema
     #   sphinxcontrib-bibtex
 gitdb==4.0.7
     # via gitpython
@@ -31,6 +32,8 @@ imagesize==1.2.0
     # via sphinx
 jinja2==3.0.1
     # via sphinx
+jsonpointer==2.1
+    # via sphinx-jsonschema
 latexcodec==2.0.1
     # via pybtex
 lsst-sphinx-bootstrap-theme==0.2.2
@@ -56,10 +59,12 @@ pyyaml==5.4.1
     #   -r requirements/main.in
     #   documenteer
     #   pybtex
+    #   sphinx-jsonschema
 requests==2.25.1
     # via
     #   documenteer
     #   sphinx
+    #   sphinx-jsonschema
 six==1.16.0
     # via
     #   latexcodec
@@ -69,6 +74,8 @@ smmap==4.0.0
 snowballstemmer==2.1.0
     # via sphinx
 sphinx-jinja==1.1.1
+    # via -r requirements/main.in
+sphinx-jsonschema==1.16.8
     # via -r requirements/main.in
 sphinx==4.0.2
     # via

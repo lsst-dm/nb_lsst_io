@@ -169,3 +169,9 @@ Links
 
 Never use "here" as link text.
 Instead, make the relevant noun or phrase the link.
+
+Environment-specific documentation
+----------------------------------
+
+If the content is specific to an RSP environments, or is different across RSP environments, use the project's tools to write environment-specific content.
+See :doc:`environment-specific-documentation`.
