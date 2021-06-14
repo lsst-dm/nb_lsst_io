@@ -55,9 +55,9 @@ Once you’ve done that, initialize the development environment:
    make init
 
 This command installs tox_ and pre-commit_ hooks.
-Tox enables you to build customized documentation sites for each RSP environemnt from a single source repository.
-A consequence of using tox is that you don't install and run Sphinx directly, instead, tox handles build dependencies through its own Python virtual environments.
-If you ever need to refresh those virtual environments (perhaps because you've updated your branch and the up-stream dependencies changed, you can re-initialize the environment by running ``make init`` in your shell again.
+Tox enables you to build customized documentation sites for each RSP environment from a single source repository.
+A consequence of using tox is that you don't install and run Sphinx directly; instead, tox handles build dependencies through its own Python virtual environments.
+If you ever need to refresh those virtual environments — perhaps because you've updated your branch and the up-stream dependencies changed — you can re-initialize the environment by running ``make init`` in your shell again.
 
 Running a documentation build
 -----------------------------
