@@ -119,6 +119,13 @@ intersphinx_mapping = {
 # URLs, so we need to ignore those URLs here.
 linkcheck_ignore = [
     r"^https://lsst-lsp-stable\.ncsa\.illinois\.edu",
+    r"^https://lsst-lsp-int\.ncsa\.illinois\.edu",
+    r"^https://lsst-nts-k8s\.ncsa\.illinois\.edu",
+    r"^https://base-lsp\.lsst\.codes",
+    r"^https://summit-lsp\.lsst\.codes",
+    r"^https://tucson-test-stand\.lsst\.codes",
+    r"^https://data-dev\.lsst\.codes",
+    r"^https://data-int\.lsst\.codes",
     r"^http(s)*://ls.st",
 ]
 linkcheck_retries = 2
