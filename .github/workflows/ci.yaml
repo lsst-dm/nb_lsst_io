@@ -55,3 +55,9 @@ jobs:
 
       - name: Run tox
         run: tox -e sphinx-${{ matrix.rsp }}
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.rsp }}
+          path: _build/html/${{ matrix.rsp }}/
+          if-no-files-found: error
