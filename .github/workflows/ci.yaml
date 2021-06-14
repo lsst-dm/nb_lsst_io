@@ -39,7 +39,6 @@ jobs:
           - nts
           - stable
           - summit
-          - tucsonteststand
 
     steps:
       - uses: actions/checkout@v2
