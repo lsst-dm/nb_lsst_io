@@ -26,7 +26,7 @@ Using reStructuredText substitutions
 ====================================
 
 For inline content (words or sentences) that changes from one environment to another, such as the name of the science platform environment or a link to the science platform, use `reStructuredText substitutions <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#substitutions>`__.
-You can find these substitutions defined inside the ``rst_epilog`` inside the ``conf.py`` file at the root of the ``nb_lsst_io`` repository, and particularly within the ``rst_epilog.jinja`` templated file.
+You can find these substitutions defined inside the ``rst_epilog``, inside the ``conf.py`` file at the root of the ``nb_lsst_io`` repository, and particularly within the ``rst_epilog.jinja`` templated file.
 Some of the key substitutions include:
 
 .. list-table:: Available substitutions
@@ -69,7 +69,7 @@ If different environments require alternative versions of whole paragraphs, use 
       This paragraph appears in documentation for the base
       and summit.
 
-      {% phalanx == "stable" %}
+      {% elif phalanx == "stable" %}
       This paragraph appears only for the LDF "stable"
       environment.
 
@@ -86,7 +86,7 @@ When using the ``jinja`` directive, as with any Sphinx directive, ensure that co
 Using Jinja templating with source file includes (\*.in.rst)
 ============================================================
 
-The previous approach works well for templating paragraphs, however it is inconvenient to write inside a Jinja directive (within the scope of Jinja syntax, at that.
+The previous approach works well for templating paragraphs, however it is inconvenient to write inside a Jinja directive (within the scope of Jinja syntax, at that).
 To customize large portions of text, you can use the include statement in combination with Jinja:
 
 .. code-block:: rst

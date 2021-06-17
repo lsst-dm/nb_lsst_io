@@ -29,7 +29,7 @@ Log into the Notebook Aspect
 
 3. On the new page, choose **NCSA** as the provider unless you have explicitly set up another identity provider (type ``NCSA`` in the search box to find it).
 
-4. Click the **Log On** button
+4. Click the **Log On** button.
 
 5. On the new page, enter your NCSA Kerberos credentials.
 
