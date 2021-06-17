@@ -1,36 +1,26 @@
-# Makefile for Sphinx documentation
-
-# You can set these variables from the command line.
-SPHINXOPTS    = -n -W
-SPHINXBUILD   = sphinx-build
-BUILDDIR      = _build
-
-# User-friendly check for sphinx-build
-ifeq ($(shell command -v $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
-$(error The '$(SPHINXBUILD)' command was not found. Run pip install -r requirements.txt)
-endif
-
-# Internal variables.
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) .
-
-.PHONY: help clean html linkcheck
-
+.PHONY: help
 help:
-	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  html       to make standalone HTML files"
-	@echo "  linkcheck  to check all external links for integrity"
-	@echo "  clean      to delete existing build products"
+	@echo "Please use \`make <target>' where <target> is one of:"
+	@echo "  init       to initialize a dev environment"
+	@echo "  clean      clear tox environments and builds"
+	@echo "  update-deps  recompile pip requirements"
+	@echo "  update     run update-deps then init"
 
+.PHONY: init
+init:
+	pip install -U tox pre-commit
+	rm -rf .tox
+	pre-commit install
+
+.PHONY: clean
 clean:
-	rm -rf $(BUILDDIR)/*
+	rm -rf _build/*
+	rm -rf .tox
 
-html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+.PHONY: update-deps
+update-deps:
+	pip install --upgrade pip-tools pip setuptools
+	pip-compile --upgrade --build-isolation --output-file requirements/main.txt requirements/main.in
+	pip-compile --upgrade --build-isolation --output-file requirements/dev.txt requirements/dev.in
 
-linkcheck:
-	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) $(BUILDDIR)/linkcheck
-	@echo
-	@echo "Link check complete; look for any errors in the above output " \
-	      "or in $(BUILDDIR)/linkcheck/output.txt."
+update: update-deps init

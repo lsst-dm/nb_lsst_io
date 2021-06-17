@@ -1,0 +1,119 @@
+# rsp-environments.yaml collects metadata about RSP environents as
+# defined in https://github.com/lsst-sqre/phalanx.
+#
+# Top-level keys correspond to Sphinx tags, and conform to the same naming
+# rules as Python variables. The "phalanx" key effectively translates that
+# tag into an environment defined in phalanx:
+# https://github.com/lsst-sqre/phalanx/tree/master/science-platform
+#
+# A JSON schema for this file is available in
+# rsp-environments.schema.json
+
+base:
+  phalanx: base
+  primary: False
+  name: Base
+  vpn: True
+  ltdedition: base
+  urls:
+    squareone: https://base-lsp.lsst.codes/
+    nb: https://base-lsp.lsst.codes/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+    - lsst-ts/base-access
+    - rubin-summit/rsp-access
+idfdev:
+  phalanx: idfdev
+  primary: False
+  name: IDF (Development instance)
+  vpn: False
+  ltdedition: idfdev
+  urls:
+    squareone: https://data-dev.lsst.cloud/
+    nb: https://data-dev.lsst.cloud/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+idfint:
+  phalanx: idfint
+  primary: False
+  name: IDF (Integration instance)
+  vpn: False
+  ltdedition: idfint
+  urls:
+    squareone: https://data-int.lsst.cloud/
+    nb: https://data-int.lsst.cloud/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+idfprod:
+  phalanx: idfprod
+  primary: True
+  name: IDF
+  vpn: False
+  ltdedition: main
+  urls:
+    squareone: https://data.lsst.cloud/
+    nb: https://data.lsst.cloud/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+    - lsst/data-management
+    - lsst/ops
+    - rubin-dp0/delegates
+int:
+  phalanx: int
+  primary: False
+  name: LDF (Integration instance)
+  vpn: True
+  ltdedition: lsp-int
+  urls:
+    squareone: https://lsst-lsp-int.ncsa.illinois.edu/
+    nb: https://lsst-lsp-int.ncsa.illinois.edu/nb
+nts:
+  phalanx: nts
+  primary: False
+  name: NTS
+  vpn: True
+  ltdedition: nts
+  urls:
+    squareone: https://lsst-nts-k8s.ncsa.illinois.edu/
+    nb: https://lsst-nts-k8s.ncsa.illinois.edu/nb
+stable:
+  phalanx: stable
+  primary: False
+  name: LDF
+  vpn: True
+  ltdedition: lsp-stable
+  urls:
+    squareone: https://lsst-lsp-stable.ncsa.illinois.edu/
+    nb: https://lsst-lsp-stable.ncsa.illinois.edu/nb
+summit:
+  phalanx: summit
+  primary: False
+  name: Summit
+  vpn: True
+  ltdedition: summit
+  urls:
+    squareone: https://summit-lsp.lsst.codes/
+    nb: https://summit-lsp.lsst.codes/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+    - lsst-ts/summit-access
+    - rubin-summit/rsp-access
+tucsonteststand:
+  phalanx: tucson-teststand
+  primary: False
+  name: Tucson Test Stand
+  vpn: True
+  ltdedition: tucsonteststand
+  urls:
+    squareone: https://tucson-teststand.lsst.codes/
+    nb: https://tucson-teststand.lsst.codes/nb
+  github_teams:
+    - lsst-sqre/square
+    - lsst-sqre/friends
+    - lsst-ts/base-access
+    - rubin-summit/rsp-access

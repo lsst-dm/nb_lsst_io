@@ -2,10 +2,10 @@
 nb.lsst.io documentation
 ########################
 
-This is the (prototype) documentation for the notebook aspect of the LSST Science Platform.
-This site supports our current users of https://lsst-lsp-stable.ncsa.illinois.edu/nb and is a proof-of-concept for documenting the LSST Science Platform as a whole.
-
+This is the Sphinx documentation source repository for the Notebook Aspect of the `Rubin Science Platform <https://data.lsst.cloud>`__.
 These docs are built with Sphinx and deployed with LSST the Docs to https://nb.lsst.io.
+
+To learn how to contribute to these docs, visit https://nb.lsst.io/project/contributing.html.
 
 License
 =======

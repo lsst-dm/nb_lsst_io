@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "phalanx": {
+        "type": "string",
+        "description": "The environment name in phalanx (corresponding to the values files in https://github.com/lsst-sqre/phalanx/tree/master/science-platform)."
+      },
+      "primary": {
+        "type": "boolean",
+        "description": "Set to true only for the primary user-facing RSP. This documentation corresponds to the root URL nb.lsst.io."
+      },
+      "name": {
+        "type": "string",
+        "description": "Human-readable name for the RSP environment."
+      },
+      "vpn": {
+        "type": "boolean",
+        "description": "True if the environment requires any type of VPN for access."
+      },
+      "ltdedition": {
+        "type": "string",
+        "description": "The edition name for LSST the Docs."
+      },
+      "urls": {
+        "type": "object",
+        "description": "URLs related to the RSP.",
+        "properties": {
+          "squareone": {
+            "type": "string",
+            "format": "uri",
+            "description": "The URL of the RSP homepage."
+          },
+          "nb": {
+            "type": "string",
+            "format": "uri",
+            "description": "The root URL of the notebook aspect in the RSP."
+          }
+        },
+        "requiredProperties": [
+          "squareone",
+          "nb"
+        ]
+      },
+      "github_teams": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true,
+        "description": "Array of GitHub team names for GitHub-OAuth based Notebook Aspect access. These correspond to the Gafaelfawr values files: https://github.com/lsst-sqre/phalanx/tree/master/services/gafaelfawr"
+      }
+    },
+    "requiredProperties": [
+      "phalanx",
+      "primary",
+      "name",
+      "vpn",
+      "ltdedition",
+      "urls"
+    ]
+  }
+}

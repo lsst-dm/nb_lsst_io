@@ -1,0 +1,12 @@
+# Editable Sphinx project dependencies
+# Add direct Sphinx build dependencies.
+#
+# After editing, update requirements/dev.txt by running:
+#     make update-deps
+
+-c main.txt
+
+mypy
+types-PyYAML
+requests
+types-requests
