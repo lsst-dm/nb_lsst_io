@@ -77,7 +77,7 @@ If different environments require alternative versions of whole paragraphs, use 
 
 The argument to the ``jinja`` directive is always ``rsp``.
 This setting makes all of the fields for a specific RSP environment from the :doc:`rsp-environments.yaml file <rsp-environments-yaml>` available in the Jinja environment.
-The example above uses the ``primary`` and ``phalanx`` fields (the ``phalanx`` field refers to the name of the environment in Phalanx).
+The example above uses the ``primary`` and ``phalanx`` fields (the ``phalanx`` field refers to the name of the environment in Phalanx_).
 
 When using the ``jinja`` directive, as with any Sphinx directive, ensure that content is indented consistently with respect to the scope of the directive, as shown above.
 

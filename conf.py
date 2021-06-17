@@ -54,6 +54,7 @@ rst_epilog = f"""
 .. _venv: https://docs.python.org/3/tutorial/venv.html
 .. _tox: https://tox.readthedocs.io/en/latest/
 .. _pre-commit: https://pre-commit.com
+.. _Phalanx:
 .. _Phalanx deployment repository: https://github.com/lsst-sqre/phalanx
 .. _sphinx-jinja: https://github.com/tardyp/sphinx-jinja
 .. _jinja: https://jinja.palletsprojects.com/en/latest/
