@@ -128,7 +128,7 @@ jobs:
           LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
           LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
         run: |
-          ltd upload --dir _build/html/$${ matrix.rsp }} --product nb --git-ref master
+          ltd upload --dir _build/html/${{ matrix.rsp }} --product nb --git-ref master
 
       - name: Upload non-primary
         if: ${{ matrix.rsp != 'idfprod' }}
@@ -136,4 +136,4 @@ jobs:
           LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
           LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
         run: |
-          ltd upload --dir _build/html/$${ matrix.rsp }} --product nb --git-ref ${{ matrix.rsp }}
+          ltd upload --dir _build/html/${{ matrix.rsp }} --product nb --git-ref ${{ matrix.rsp }}
