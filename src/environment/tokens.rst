@@ -7,7 +7,7 @@ An example is the TAP service provided by the API Aspect.
 When interacting with authenticated services for within the Notebook Aspect you typically doesn't need to interact with the access tokens since the various clients are able to pick up the token from your user environment.
 If you want to access services from a local machine (for example, to access the TAP service from `TOPCAT`_), you will need to create an access token for that purpose.
 
-This page will give you an introduction to the access token, where to create onefor use from a local machine, and how to use it in an environment outside the Notebook Aspect.
+This page will give you an introduction to the access token, where to create one for use from a local machine, and how to use it in an environment outside the Notebook Aspect.
 
 The current user interface for managing tokens will look very primitive.
 The functionality is present, but the UI design is not yet complete.
