@@ -28,7 +28,11 @@ Using a token outside the Science Platform
 ==========================================
 
 If you want to use an access token from your local system, you can create a new one.
-You can restrict what that token is able to do to only the services that you need to access, give the token a name, and configure its expiration (or set it to not expire).
+At creation time, you can
+
+- give the token a name,
+- restrict the token's access to only the services you need, and
+- configure the expiration, including setting it to not expire.
 
 .. jinja:: rsp
 
