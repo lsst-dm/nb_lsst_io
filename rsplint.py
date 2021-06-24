@@ -110,6 +110,25 @@ def lint_science_platform_values(
             expected_url=f"https://{fqdn}/nb",
         )
     )
+    if values_data.get("tap", {}).get("enabled", False):
+        issues.extend(
+            lint_url(
+                path=path,
+                env_key=env_key,
+                env_data=env_data,
+                url_key="tap",
+                expected_url=f"https://{fqdn}/api/tap",
+            )
+        )
+    else:
+        if "urls" in env_data and "tap" in env_data["urls"]:
+            issues.append(
+                GeneralIssue(
+                    path=path,
+                    keys=[env_key, "urls", "tap"],
+                    message="TAP is not deployed in this environment",
+                )
+            )
 
     return issues
 
@@ -134,6 +153,8 @@ def lint_url(
                 message="Key is missing. " f"Value should be {expected_url}",
             )
         )
+        return issues
+
     if url != expected_url:
         issues.append(
             KeyValueIssue(

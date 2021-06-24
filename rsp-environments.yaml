@@ -32,6 +32,7 @@ idfdev:
   urls:
     squareone: https://data-dev.lsst.cloud/
     nb: https://data-dev.lsst.cloud/nb
+    tap: https://data-dev.lsst.cloud/api/tap
   github_teams:
     - lsst-sqre/square
     - lsst-sqre/friends
@@ -44,7 +45,9 @@ idfint:
   urls:
     squareone: https://data-int.lsst.cloud/
     nb: https://data-int.lsst.cloud/nb
+    tap: https://data-int.lsst.cloud/api/tap
   github_teams:
+    - lsst/ops-panda
     - lsst-sqre/square
     - lsst-sqre/friends
 idfprod:
@@ -56,6 +59,7 @@ idfprod:
   urls:
     squareone: https://data.lsst.cloud/
     nb: https://data.lsst.cloud/nb
+    tap: https://data.lsst.cloud/api/tap
   github_teams:
     - lsst-sqre/square
     - lsst-sqre/friends
@@ -71,6 +75,7 @@ int:
   urls:
     squareone: https://lsst-lsp-int.ncsa.illinois.edu/
     nb: https://lsst-lsp-int.ncsa.illinois.edu/nb
+    tap: https://lsst-lsp-int.ncsa.illinois.edu/api/tap
 nts:
   phalanx: nts
   primary: False
@@ -89,6 +94,7 @@ stable:
   urls:
     squareone: https://lsst-lsp-stable.ncsa.illinois.edu/
     nb: https://lsst-lsp-stable.ncsa.illinois.edu/nb
+    tap: https://lsst-lsp-stable.ncsa.illinois.edu/api/tap
 summit:
   phalanx: summit
   primary: False
