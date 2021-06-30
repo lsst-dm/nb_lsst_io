@@ -11,13 +11,36 @@ You can find these notebooks in the :file:`notebooks/notebook-demo` directory of
 Double click the directory, then double click on the notebook to open it.
 You can click **Run** → **Run all Cells** to run the entire notebook, or type :kbd:`shift`\ -\ :kbd:`return` to run one cell at a time.
 
-In the `terminal <https://jupyterlab.readthedocs.io/en/latest/user/terminal.html>`_, you can find ``notebook-demo `` in the ``~/notebooks`` directory.
+In the `terminal <https://jupyterlab.readthedocs.io/en/latest/user/terminal.html>`_, you can find ``notebook-demo`` in the ``~/notebooks`` directory.
 
 .. note::
 
    The :file:`notebooks/notebook-demo` directory is hosted at https://github.com/lsst-sqre/notebook-demo.
    Every time you log into the Notebook Aspect, the default branch (called ``prod``) is updated from GitHub.
    Avoid running :command:`git commit` on the ``prod`` branch.
+
+How the notebooks are kept up to date
+-------------------------------------
+
+The system tries to keep the demo notebooks up to date.
+It does this by using the ``git stash`` and ``git apply`` commands to try to save user changes and update the notebooks without affecting user activity.
+To learn more about ``git stash``, see the `git documentation <https://git-scm.com/docs/git-stash>`_.
+
+Updating the notebooks is a multistage process:
+
+#. On startup the launcher looks at your ``notebook-demo`` repository to see if there are user changes that are not committed to the repository.
+#. If there are it executes a ``git stash`` to save the user changes (this could be simply from running a notebooke).
+#. It then checks to see if the repository is on the production branch that needs updates.
+   This is usually the ``prod`` branch.
+#. If not, it will switch to the production branch.
+#. The production branch is updated.
+#. If the repository was not on the production branch initially the launcher changes back to the original branch.
+#. Finally, any user changes are put back in place.
+
+There are two places where things could potentially run into problems.
+First, if the user has made commits on the production branch of the repository, there could be merge conflicts when the launcher tries to update it.
+Second, if the user has un-committed changes on the production branch, there could be conflicts when the launcher tries to re-apply the stashed user changes.
+In either case, it will be up to you to work out the conflicts in order for future updates to work.
 
 Notebooks
 =========
