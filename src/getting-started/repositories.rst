@@ -25,8 +25,8 @@ Take a look at these GitHub repositories to find interesting notebooks:
 
    * - Repository
      - Description
-   * - `lsst-sqre/notebook-demo`_
-     - Preinstalled demo notebooks. See :doc:`notebook-demo`.
+   * - `rubin-dp0/tutorial-notebooks`_
+     - Tutorial notebooks intended to run on the `IDF`_, but could be useful for users running in other environments too.
    * - `lsst-dm/dm-demo-notebooks`_
      - Notebooks by LSST Data Management that demonstrate LSST DM software.
    * - `lsst-com/notebooks`_
@@ -36,7 +36,8 @@ Take a look at these GitHub repositories to find interesting notebooks:
    * - `lsst-dm/tutorial-lsst2017`_
      - This is the tutorial notebook from LSST Data Management’s onsite tutorials. Check out the ``answers`` branch to run the notebook all the way through — or try to code it yourself from ``master``.
 
-.. _`lsst-sqre/notebook-demo`: https://github.com/lsst-sqre/notebook-demo
+.. _`IDF`: https://data.lsst.cloud
+.. _`rubin-dp0/tutorial-notebooks`: https://github.com/rubin-dp0/tutorial-notebooks
 .. _`lsst-dm/dm-demo-notebooks`: https://github.com/lsst-dm/dm-demo-notebooks
 .. _`lsst-com/notebooks`: https://github.com/lsst-com/notebooks
 .. _`LSSTScienceCollaborations/DMStackClub`: https://github.com/LSSTScienceCollaborations/DMStackClub

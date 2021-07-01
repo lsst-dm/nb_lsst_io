@@ -80,4 +80,3 @@ Next steps
 ==========
 
 -  Learn more about the `JupyterLab interface <https://jupyterlab.readthedocs.io/en/latest/>`_ (external Project Jupyter documentation).
--  :doc:`Explore demo notebooks <notebook-demo>` featuring LSST data analysis.
