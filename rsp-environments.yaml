@@ -62,10 +62,10 @@ idfprod:
     tap: https://data.lsst.cloud/api/tap
   github_teams:
     - lsst-sqre/square
-    - lsst-sqre/friends
     - lsst/data-management
     - lsst/ops
     - rubin-dp0/delegates
+    - rubin-dp0/friends
 int:
   phalanx: int
   primary: False
