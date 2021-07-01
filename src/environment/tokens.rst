@@ -20,7 +20,7 @@ Whenever you log on to the Notebook Aspect, an access token will be generated fo
 This token is time-limited and will be refreshed when you log out and log back in.
 The token is stored in the file ``~/.access_token`` so that it can be accessed by notebooks and used to authenticate to other Science Platform services.
 
-The environment includes a notebook, at ``~/notebooks/notebook-demo/token-info.ipynb``, that allows you to inspect that token.
+The environment includes a notebook, at ``~/notebooks/system-test/token-info.ipynb``, that allows you to inspect that token.
 Executing the two cells in the notebook will provide information about token creation time and lifetime among other things.
 You will note from the above notebook that the token is also provided as the value of the environment variable ``ACCESS_TOKEN``, but the file version should be considered primary.
 

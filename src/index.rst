@@ -29,7 +29,6 @@ Getting started
 
    getting-started/account
    getting-started/logging-in
-   getting-started/notebook-demo
    getting-started/repositories
    getting-started/logging-out
    getting-started/getting-help
