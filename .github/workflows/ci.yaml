@@ -23,7 +23,7 @@ jobs:
         run: tox -e typing
 
       - name: Run precommit hooks
-        uses: pre-commit/action@v2.0.3
+        uses: j178/prek-action@v2
 
   build:
     runs-on: ubuntu-latest
